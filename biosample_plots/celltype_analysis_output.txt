@@ -1,0 +1,1559 @@
+================================================================================
+COMPLETE CELL TYPE LISTING BY ORGAN AND SAMPLE TYPE
+================================================================================
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Adipose (5 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (5 types):
+    - Adipose tissue
+    - Mesenteric fat pad  (2 samples)
+    - Omental fat pad  (4 samples)
+    - Subcutaneous abdominal adipose tissue  (5 samples)
+    - Subcutaneous adipose tissue
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Adrenal gland (1 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (1 types):
+    - Adrenal gland  (19 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Blood (193 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (137 types):
+    - CMK
+    - DND-41
+    - DOHH2
+    - GM06990
+    - GM08714
+    - GM10248
+    - GM10266
+    - GM12801
+    - GM12864
+    - GM12865
+    - GM12866
+    - GM12872
+    - GM12873
+    - GM12874
+    - GM12875
+    - GM12878
+    - GM12891
+    - GM12892
+    - GM13976
+    - GM13977
+    - GM18498
+    - GM18499
+    - GM18502
+    - GM18505
+    - GM18508
+    - GM18511
+    - GM18517
+    - GM18519
+    - GM18520
+    - GM18858
+    - GM18861
+    - GM18867
+    - GM18868
+    - GM18870
+    - GM18873
+    - GM18907
+    - GM18909
+    - GM19023
+    - GM19025
+    - GM19035
+    - GM19043
+    - GM19238
+    - GM19239
+    - GM19240
+    - GM19324
+    - GM19328
+    - GM19351
+    - GM19372
+    - GM19395
+    - GM19397
+    - GM19438
+    - GM19452
+    - GM19455
+    - GM19463
+    - GM19467
+    - GM19468
+    - GM20000
+    - GM21360
+    - GM21367
+    - GM21381
+    - GM21390
+    - GM21423
+    - GM21447
+    - GM21515
+    - GM21526
+    - GM21528
+    - GM21529
+    - GM21576
+    - GM21619
+    - GM21717
+    - GM21723
+    - GM21737
+    - GM21786
+    - GM21825
+    - HG02571
+    - HG02588
+    - HG02610
+    - HG02623
+    - HG02642
+    - HG02678
+    - HG02759
+    - HG02763
+    - HG02798
+    - HG02840
+    - HG02852
+    - HG02870
+    - HG02884
+    - HG02885
+    - HG02938
+    - HG02943
+    - HG02970
+    - HG02973
+    - HG02981
+    - HG03025
+    - HG03039
+    - HG03045
+    - HG03060
+    - HG03064
+    - HG03066
+    - HG03095
+    - HG03097
+    - HG03103
+    - HG03108
+    - HG03135
+    - HG03139
+    - HG03159
+    - HG03175
+    - HG03196
+    - HG03280
+    - HG03342
+    - HG03354
+    - HG03378
+    - HG03432
+    - HG03439
+    - HG03442
+    - HG03457
+    - HG03460
+    - HG03469
+    - HG03520
+    - HG03521
+    - HG03558
+    - HG03565
+    - HG03571
+    - HG03575
+    - HL-60
+    - Jurkat, Clone E6-1
+    - K562  (62 samples)
+    - K562, G1 phase
+    - K562, G2 phase
+    - KOPT-K1
+    - Karpas-422
+    - Loucy
+    - MM.1S
+    - NAMALWA  (2 samples)
+    - OCI-LY7
+    - RPMI8226
+    - SU-DHL-6
+
+  [Primary cell] (55 types):
+    - Activated B cell
+    - Activated CD4-positive, CD25-positive, alpha-beta regulatory T cell  (4 samples)
+    - Activated CD4-positive, alpha-beta T cell  (23 samples)
+    - Activated CD4-positive, alpha-beta memory T cell  (2 samples)
+    - Activated CD8-positive, alpha-beta T cell  (3 samples)
+    - Activated CD8-positive, alpha-beta memory T cell  (15 samples)
+    - Activated T-cell  (17 samples)
+    - Activated T-helper 1 cell  (4 samples)
+    - Activated T-helper 17 cell  (2 samples)
+    - Activated T-helper 2 cell
+    - Activated T-helper 9 cell
+    - Activated effector memory CD4-positive, alpha-beta T cell  (3 samples)
+    - Activated gamma-delta T cell  (2 samples)
+    - Activated naive CD4-positive, alpha-beta T cell  (12 samples)
+    - Activated naive CD8-positive, alpha-beta T cell  (10 samples)
+    - B cell  (8 samples)
+    - CD14-positive monocyte  (14 samples)
+    - CD1c-positive myeloid dendritic cell
+    - CD4-positive, CD25-positive, alpha-beta regulatory T cell  (16 samples)
+    - CD4-positive, alpha-beta T cell  (29 samples)
+    - CD4-positive, alpha-beta memory T cell  (12 samples)
+    - CD8-positive, alpha-beta T cell  (13 samples)
+    - CD8-positive, alpha-beta memory T cell  (12 samples)
+    - Central memory CD4-positive, alpha-beta T cell  (2 samples)
+    - Central memory CD8-positive, alpha-beta T cell  (2 samples)
+    - Dendritic cell
+    - Effector CD4-positive, alpha-beta T cell  (2 samples)
+    - Effector memory CD4-positive, alpha-beta T cell  (4 samples)
+    - Effector memory CD8-positive, alpha-beta T cell  (2 samples)
+    - IgD-negative memory B cell  (5 samples)
+    - Inflammatory macrophage  (3 samples)
+    - Memory B cell  (2 samples)
+    - Mononuclear cell
+    - Naive B cell  (9 samples)
+    - Naive thymus-derived CD4-positive, alpha-beta T cell  (20 samples)
+    - Naive thymus-derived CD4-positive, alpha-beta T cell, mixed sex
+    - Naive thymus-derived CD8-positive, alpha-beta T cell  (16 samples)
+    - Natural killer cell  (11 samples)
+    - Neutrophil  (3 samples)
+    - Peripheral blood mononuclear cell  (4 samples)
+    - Stimulated activated CD4-positive, alpha-beta T cell  (47 samples)
+    - Stimulated activated CD8-positive, alpha-beta memory T cell  (27 samples)
+    - Stimulated activated effector memory CD8-positive, alpha-beta T cell  (5 samples)
+    - Stimulated activated memory B cell  (2 samples)
+    - Stimulated activated naive B cell  (5 samples)
+    - Stimulated activated naive CD8-positive, alpha-beta T cell  (4 samples)
+    - Suppressor macrophage  (4 samples)
+    - T follicular helper cell
+    - T-cell  (56 samples)
+    - T-helper 1 cell  (9 samples)
+    - T-helper 1 cell, mixed sex
+    - T-helper 17 cell  (8 samples)
+    - T-helper 2 cell  (9 samples)
+    - T-helper 22 cell
+    - T-helper 9 cell
+
+  [In vitro differentiated cells] (1 types):
+    - Hematopoietic multipotent progenitor cell (in vitro differentiated cells)  (12 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Blood vessel (16 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Primary cell] (10 types):
+    - Brain microvascular endothelial cell
+    - Dermis blood vessel endothelial cell  (2 samples)
+    - Dermis blood vessel endothelial cell, male newborn  (2 samples)
+    - Dermis microvascular lymphatic vessel endothelial cell  (2 samples)
+    - Endothelial cell of umbilical vein, newborn  (3 samples)
+    - Fibroblast of pulmonary artery
+    - Fibroblast of the aortic adventitia
+    - Kidney capillary endothelial cell
+    - Lung microvascular endothelial cell  (2 samples)
+    - Pulmonary artery endothelial cell
+
+  [Tissue] (6 types):
+    - Aorta  (4 samples)
+    - Ascending aorta  (2 samples)
+    - Coronary artery  (2 samples)
+    - Posterior vena cava
+    - Thoracic aorta  (2 samples)
+    - Tibial artery  (3 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Bone (5 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (3 types):
+    - KMS-11
+    - MG63
+    - SJSA1
+
+  [In vitro differentiated cells] (1 types):
+    - Osteocyte (in vitro differentiated cells)
+
+  [Tissue] (1 types):
+    - Femur
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Bone marrow (13 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (10 types):
+    - HAP-1
+    - HS-27A
+    - HS-5
+    - KBM-7
+    - L1-S8
+    - L1-S8R
+    - NB4
+    - NCI-H929
+    - OCI-LY1
+    - OCI-LY3
+
+  [Primary cell] (3 types):
+    - Common myeloid progenitor, CD34-positive  (14 samples)
+    - Immature natural killer cell  (7 samples)
+    - Stromal cell of bone marrow
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Brain (53 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (11 types):
+    - A172
+    - BE2C
+    - D341Med
+    - D721Med
+    - Daoy
+    - H4
+    - H54
+    - M059J
+    - SK-N-DZ  (2 samples)
+    - SK-N-MC
+    - SK-N-SH  (2 samples)
+
+  [Primary cell] (7 types):
+    - Astrocyte
+    - Astrocyte of the cerebellum
+    - Astrocyte of the hippocampus
+    - Brain pericyte
+    - Choroid plexus epithelial cell
+    - Neurosphere  (4 samples)
+    - Smooth muscle cell of the brain vasculature
+
+  [In vitro differentiated cells] (9 types):
+    - Astrocyte (in vitro differentiated cells)
+    - Bipolar neuron (in vitro differentiated cells)
+    - Ecto neural progenitor cell (in vitro differentiated cells)
+    - Glutamatergic neuron (in vitro differentiated cells)  (2 samples)
+    - Mid-neurogenesis radial glial cells (in vitro differentiated cells)
+    - Motor neuron (in vitro differentiated cells)  (6 samples)
+    - Neural cell (in vitro differentiated cells)
+    - Neural progenitor cell (in vitro differentiated cells)  (2 samples)
+    - Neuron (in vitro differentiated cells)
+
+  [Organoid] (1 types):
+    - Brain organoid  (6 samples)
+
+  [Tissue] (25 types):
+    - Ammon's horn
+    - Angular gyrus  (2 samples)
+    - Brain  (15 samples)
+    - Caudate nucleus  (3 samples)
+    - Cerebellar cortex
+    - Cerebellum  (3 samples)
+    - Cingulate gyrus  (2 samples)
+    - Dorsolateral prefrontal cortex  (61 samples)
+    - Frontal cortex  (2 samples)
+    - Germinal matrix  (2 samples)
+    - Globus pallidus
+    - Head of caudate nucleus  (86 samples)
+    - Inferior parietal cortex
+    - Layer of hippocampus  (3 samples)
+    - Medulla oblongata
+    - Midbrain
+    - Middle frontal gyrus
+    - Occipital lobe
+    - Pons
+    - Posterior cingulate cortex
+    - Posterior cingulate gyrus  (48 samples)
+    - Putamen
+    - Substantia nigra  (2 samples)
+    - Superior temporal gyrus
+    - Temporal lobe  (2 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Breast (9 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (4 types):
+    - MCF 10A  (3 samples)
+    - MCF-7  (4 samples)
+    - MCF-7, expressing RNAi
+    - T47D  (3 samples)
+
+  [Primary cell] (4 types):
+    - Fibroblast of breast  (2 samples)
+    - Fibroblast of mammary gland
+    - Mammary epithelial cell  (3 samples)
+    - Myoepithelial cell of mammary gland  (2 samples)
+
+  [Tissue] (1 types):
+    - Breast epithelium  (4 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Connective tissue (7 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (2 types):
+    - CWRU1
+    - HT1080
+
+  [Primary cell] (2 types):
+    - Mesenchymal stem cell
+    - Osteoblast  (2 samples)
+
+  [In vitro differentiated cells] (3 types):
+    - Adipocyte (in vitro differentiated cells)  (2 samples)
+    - Chondrocyte (in vitro differentiated cells)
+    - Mesenchymal stem cell (in vitro differentiated cells)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Embryo (29 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (13 types):
+    - ELF-1
+    - H1
+    - H7
+    - H9
+    - H9, stably expressing C-terminal DsRed-tagged CDT1, stably expressing N-terminal eGFP-tagged GMNN G1 phase
+    - H9, stably expressing C-terminal DsRed-tagged CDT1, stably expressing N-terminal eGFP-tagged GMNN G1b phase
+    - H9, stably expressing C-terminal DsRed-tagged CDT1, stably expressing N-terminal eGFP-tagged GMNN G2 phase
+    - H9, stably expressing C-terminal DsRed-tagged CDT1, stably expressing N-terminal eGFP-tagged GMNN S1 phase
+    - H9, stably expressing C-terminal eGFP-tagged HES5
+    - HUES48
+    - HUES6
+    - HUES64
+    - UCSF-4
+
+  [Primary cell] (3 types):
+    - Amniotic stem cell
+    - Dedifferentiated amniotic fluid mesenchymal stem cell
+    - Trophoblast cell  (4 samples)
+
+  [In vitro differentiated cells] (9 types):
+    - Ectodermal cell (in vitro differentiated cells)
+    - Endodermal cell (in vitro differentiated cells)  (3 samples)
+    - Mesendoderm (in vitro differentiated cells)
+    - Mesodermal cell (in vitro differentiated cells)  (2 samples)
+    - Neural crest cell (in vitro differentiated cells)
+    - Neuroepithelial stem cell (in vitro differentiated cells)
+    - Neuronal stem cell (in vitro differentiated cells)  (2 samples)
+    - Radial glial cell (in vitro differentiated cells)
+    - Trophoblast cell (in vitro differentiated cells)
+
+  [Tissue] (4 types):
+    - Chorion  (3 samples)
+    - Embryonic facial prominence
+    - Trophoblast  (2 samples)
+    - Umbilical cord
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Epithelium (3 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (1 types):
+    - Urothelium cell line  (2 samples)
+
+  [Primary cell] (1 types):
+    - Non-pigmented ciliary epithelial cell
+
+  [In vitro differentiated cells] (1 types):
+    - Endothelial cell (in vitro differentiated cells)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Esophagus (4 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Primary cell] (1 types):
+    - Epithelial cell of esophagus
+
+  [Tissue] (3 types):
+    - Esophagus  (2 samples)
+    - Esophagus mucosa
+    - Esophagus squamous epithelium  (4 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Eye (6 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (1 types):
+    - WERI-Rb-1
+
+  [Primary cell] (3 types):
+    - Fibroblast of the conjunctiva
+    - Iris pigment epithelial cell
+    - Retinal pigment epithelial cell
+
+  [Tissue] (2 types):
+    - Eye  (2 samples)
+    - Retina  (3 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Fallopian tube (1 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (1 types):
+    - Fallopian tube  (2 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Gallbladder (1 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (1 types):
+    - Mucosa of gallbladder
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Heart (14 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Primary cell] (1 types):
+    - Cardiac fibroblast  (3 samples)
+
+  [In vitro differentiated cells] (2 types):
+    - Cardiovascular progenitor cell (in vitro differentiated cells)
+    - Mesothelial cell of epicardium (in vitro differentiated cells)
+
+  [Tissue] (11 types):
+    - Cardiac septum
+    - Heart  (19 samples)
+    - Heart left ventricle  (18 samples)
+    - Heart right ventricle  (17 samples)
+    - Left cardiac atrium  (5 samples)
+    - Left ventricle myocardium inferior
+    - Left ventricle myocardium superior
+    - Right atrium auricular region  (2 samples)
+    - Right cardiac atrium  (5 samples)
+    - Right ventricle myocardium inferior
+    - Right ventricle myocardium superior
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Kidney (27 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (8 types):
+    - ACHN
+    - Caki2
+    - G401
+    - HEK293
+    - HEK293T
+    - HK-2
+    - RCC
+    - RCC 7860
+
+  [Primary cell] (7 types):
+    - Epithelial cell of proximal tubule
+    - Glomerular endothelial cell
+    - Glomerular visceral epithelial cell
+    - Kidney epithelial cell
+    - Kidney glomerular epithelial cell
+    - Kidney tubule cell  (2 samples)
+    - Renal cortical epithelial cell
+
+  [In vitro differentiated cells] (1 types):
+    - Nephron progenitor cell (in vitro differentiated cells)  (2 samples)
+
+  [Organoid] (1 types):
+    - Nephron organoid  (3 samples)
+
+  [Tissue] (10 types):
+    - Kidney  (17 samples)
+    - Left kidney  (9 samples)
+    - Left renal cortex interstitium  (4 samples)
+    - Left renal pelvis  (4 samples)
+    - Renal cortex interstitium  (11 samples)
+    - Renal pelvis  (10 samples)
+    - Right kidney  (10 samples)
+    - Right renal cortex interstitium  (3 samples)
+    - Right renal pelvis  (4 samples)
+    - Ureter
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Large intestine (24 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (15 types):
+    - Caco-2
+    - HCEC 1CT
+    - HCT116  (9 samples)
+    - HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens BRD4
+    - HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens CDK7
+    - HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens CTCF
+    - HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens MED14
+    - HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens POLR2A
+    - HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens RAD21
+    - HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens SMARCA5
+    - HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens SUPT16H
+    - HT-29
+    - LoVo
+    - RKO
+    - SW480
+
+  [Tissue] (9 types):
+    - Colonic mucosa  (4 samples)
+    - Large intestine  (15 samples)
+    - Left colon  (2 samples)
+    - Mucosa of descending colon  (3 samples)
+    - Mucosa of rectum  (2 samples)
+    - Muscle layer of colon  (2 samples)
+    - Rectal smooth muscle tissue
+    - Sigmoid colon  (6 samples)
+    - Transverse colon  (4 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Limb (5 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (5 types):
+    - Left forelimb
+    - Left hindlimb
+    - Limb  (2 samples)
+    - Right forelimb
+    - Right hindlimb
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Liver (9 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (3 types):
+    - HepG2
+    - HuH-7
+    - HuH-7.5
+
+  [Primary cell] (2 types):
+    - Hepatic stellate cell
+    - Hepatocyte
+
+  [In vitro differentiated cells] (1 types):
+    - Hepatocyte (in vitro differentiated cells)
+
+  [Tissue] (3 types):
+    - Left lobe of liver  (2 samples)
+    - Liver  (7 samples)
+    - Right lobe of liver  (6 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Lung (19 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (10 types):
+    - A549  (3 samples)
+    - AG04450
+    - AG08396
+    - Calu3
+    - IMR-90  (2 samples)
+    - NCI-H226
+    - NCI-H460
+    - PC-9
+    - WI38  (2 samples)
+    - WI38, stably expressing RAF1
+
+  [Primary cell] (2 types):
+    - Bronchial epithelial cell  (2 samples)
+    - Fibroblast of lung  (4 samples)
+
+  [Tissue] (7 types):
+    - Left lung  (15 samples)
+    - Lower lobe of left lung  (3 samples)
+    - Lower lobe of right lung  (2 samples)
+    - Lung  (17 samples)
+    - Right lung  (11 samples)
+    - Upper lobe of left lung  (6 samples)
+    - Upper lobe of right lung
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Lymphoid tissue (2 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (1 types):
+    - GM18507
+
+  [Tissue] (1 types):
+    - Germinal center
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Mouth (5 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (2 types):
+    - ACC112
+    - AG09319
+
+  [Primary cell] (2 types):
+    - Fibroblast of gingiva
+    - Fibroblast of peridontal ligament
+
+  [Tissue] (1 types):
+    - Tongue  (2 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Muscle (24 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (3 types):
+    - A673
+    - LHCN-M2
+    - SJCRH30
+
+  [Primary cell] (4 types):
+    - Cardiac muscle cell
+    - Skeletal muscle cell
+    - Skeletal muscle myoblast  (2 samples)
+    - Skeletal muscle satellite cell
+
+  [In vitro differentiated cells] (5 types):
+    - Cardiac muscle cell (in vitro differentiated cells)  (2 samples)
+    - Cardiac myoblast (in vitro differentiated cells)
+    - Myocyte (in vitro differentiated cells)
+    - Myotube (in vitro differentiated cells)  (2 samples)
+    - Smooth muscle cell (in vitro differentiated cells)
+
+  [Tissue] (12 types):
+    - Esophagus muscularis mucosa  (4 samples)
+    - Forelimb muscle
+    - Gastrocnemius medialis  (4 samples)
+    - Gastroesophageal sphincter  (4 samples)
+    - Hindlimb muscle
+    - Muscle of arm  (17 samples)
+    - Muscle of back  (15 samples)
+    - Muscle of leg  (14 samples)
+    - Muscle of trunk  (4 samples)
+    - Psoas muscle  (9 samples)
+    - Skeletal muscle tissue  (3 samples)
+    - Stomach smooth muscle  (2 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Nerve (2 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (2 types):
+    - Sciatic nerve  (3 samples)
+    - Tibial nerve  (4 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Nose (1 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (1 types):
+    - C803
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Ovary (2 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (2 types):
+    - Ovary  (8 samples)
+    - Ovary, female embryo
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Pancreas (9 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (3 types):
+    - 8988T
+    - HPDE6-E6E7
+    - Panc1
+
+  [In vitro differentiated cells] (3 types):
+    - Islet precursor cell (in vitro differentiated cells)
+    - Progenitor cell of endocrine pancreas (in vitro differentiated cells)
+    - Type B pancreatic cell (in vitro differentiated cells)
+
+  [Tissue] (3 types):
+    - Body of pancreas  (4 samples)
+    - Endocrine pancreas  (3 samples)
+    - Pancreas  (9 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Parathyroid gland (1 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (1 types):
+    - Parathyroid adenoma  (2 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Penis (6 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (5 types):
+    - EH
+    - EL
+    - ELR
+    - HFF-Myc
+    - HFFc6
+
+  [Primary cell] (1 types):
+    - Foreskin melanocyte, male newborn  (3 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Placenta (10 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (1 types):
+    - HTR-8/SVneo
+
+  [Primary cell] (2 types):
+    - Amniotic epithelial cell
+    - Fibroblast of villous mesenchyme
+
+  [Tissue] (7 types):
+    - Amnion
+    - Chorionic villus  (4 samples)
+    - Placenta  (13 samples)
+    - Placenta, embryo
+    - Placenta, female embryo  (5 samples)
+    - Placenta, male embryo  (6 samples)
+    - Placental basal plate  (2 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Prostate (10 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (8 types):
+    - 22Rv1  (2 samples)
+    - C4-2B
+    - LNCAP  (2 samples)
+    - LNCaP clone FGC  (2 samples)
+    - PC-3
+    - RWPE1
+    - RWPE2  (2 samples)
+    - VCaP
+
+  [Primary cell] (1 types):
+    - Epithelial cell of prostate  (2 samples)
+
+  [Tissue] (1 types):
+    - Prostate gland  (2 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Skin (44 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (28 types):
+    - AG04449
+    - AG08395
+    - AG09309
+    - AG10803
+    - AG20443
+    - BJ
+    - COLO829
+    - GM03348  (2 samples)
+    - GM03348, genetically modified (insertion) using transduction targeting H. sapiens MYOD1
+    - GM04503
+    - GM04504
+    - GM23248
+    - GM23338  (2 samples)
+    - IPS DF 19.11
+    - IPS DF 19.7
+    - IPS DF 4.7
+    - IPS DF 6.9
+    - IPS-11a
+    - IPS-15b
+    - IPS-18a
+    - IPS-18c
+    - IPS-20b
+    - IPS-NIHi11
+    - IPS-NIHi7
+    - RPMI7951
+    - SK-MEL-5
+    - WTC11
+    - WTC11, genetically modified (insertion) using TALEN inserting M. musculus Neurog2
+
+  [Primary cell] (12 types):
+    - Epidermal melanocyte
+    - Fibroblast of dermis  (3 samples)
+    - Fibroblast of skin of abdomen
+    - Fibroblast of skin of back
+    - Fibroblast of skin of left quadriceps
+    - Fibroblast of skin of right biceps
+    - Fibroblast of skin of right quadriceps
+    - Fibroblast of skin of scalp
+    - Fibroblast of upper back skin
+    - Foreskin fibroblast, male newborn  (5 samples)
+    - Foreskin keratinocyte, male newborn  (3 samples)
+    - Keratinocyte  (2 samples)
+
+  [Tissue] (4 types):
+    - Lower leg skin  (4 samples)
+    - Skin epidermis  (22 samples)
+    - Skin of body
+    - Suprapubic skin  (4 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Small intestine (4 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (4 types):
+    - Duodenal mucosa  (2 samples)
+    - Muscle layer of duodenum  (2 samples)
+    - Peyer's patch  (4 samples)
+    - Small intestine  (16 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Spinal cord (2 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Primary cell] (1 types):
+    - Astrocyte of the spinal cord
+
+  [Tissue] (1 types):
+    - Spinal cord  (8 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Spleen (1 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (1 types):
+    - Spleen  (13 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Stomach (3 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (3 types):
+    - Mucosa of stomach
+    - Stomach  (23 samples)
+    - Stomach, female embryo
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Testis (3 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (1 types):
+    - NT2/D1
+
+  [Tissue] (2 types):
+    - Testis  (2 samples)
+    - Testis, male embryo  (2 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Thymus (2 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (2 types):
+    - Thymus  (10 samples)
+    - Thymus, female embryo
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Thyroid (1 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (1 types):
+    - Thyroid gland  (4 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Urinary bladder (2 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (2 types):
+    - Mucosa of urinary bladder
+    - Urinary bladder  (2 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Uterus (4 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Cell line] (3 types):
+    - HeLa-S3  (2 samples)
+    - HeLa-S3, G1b phase
+    - Ishikawa  (3 samples)
+
+  [Tissue] (1 types):
+    - Uterus  (3 samples)
+
+────────────────────────────────────────────────────────────────────────────────
+ORGAN: Vagina (1 unique base cell types/samples)
+────────────────────────────────────────────────────────────────────────────────
+
+  [Tissue] (1 types):
+    - Vagina  (2 samples)
+
+
+================================================================================
+SUMMARY: 583 total unique (organ, sample_type, base_celltype) combinations
+================================================================================
+
+Base cell types by Sample Type:
+  Cell line: 274 unique base types across all organs
+  Primary cell: 124 unique base types across all organs
+  In vitro differentiated cells: 36 unique base types across all organs
+  Organoid: 2 unique base types across all organs
+  Tissue: 147 unique base types across all organs
+
+
+================================================================================
+ALL CELL LINES (base names, grouped by organ)
+================================================================================
+
+  Blood (137 cell lines):
+    * CMK
+    * DND-41
+    * DOHH2
+    * GM06990
+    * GM08714
+    * GM10248
+    * GM10266
+    * GM12801
+    * GM12864
+    * GM12865
+    * GM12866
+    * GM12872
+    * GM12873
+    * GM12874
+    * GM12875
+    * GM12878
+    * GM12891
+    * GM12892
+    * GM13976
+    * GM13977
+    * GM18498
+    * GM18499
+    * GM18502
+    * GM18505
+    * GM18508
+    * GM18511
+    * GM18517
+    * GM18519
+    * GM18520
+    * GM18858
+    * GM18861
+    * GM18867
+    * GM18868
+    * GM18870
+    * GM18873
+    * GM18907
+    * GM18909
+    * GM19023
+    * GM19025
+    * GM19035
+    * GM19043
+    * GM19238
+    * GM19239
+    * GM19240
+    * GM19324
+    * GM19328
+    * GM19351
+    * GM19372
+    * GM19395
+    * GM19397
+    * GM19438
+    * GM19452
+    * GM19455
+    * GM19463
+    * GM19467
+    * GM19468
+    * GM20000
+    * GM21360
+    * GM21367
+    * GM21381
+    * GM21390
+    * GM21423
+    * GM21447
+    * GM21515
+    * GM21526
+    * GM21528
+    * GM21529
+    * GM21576
+    * GM21619
+    * GM21717
+    * GM21723
+    * GM21737
+    * GM21786
+    * GM21825
+    * HG02571
+    * HG02588
+    * HG02610
+    * HG02623
+    * HG02642
+    * HG02678
+    * HG02759
+    * HG02763
+    * HG02798
+    * HG02840
+    * HG02852
+    * HG02870
+    * HG02884
+    * HG02885
+    * HG02938
+    * HG02943
+    * HG02970
+    * HG02973
+    * HG02981
+    * HG03025
+    * HG03039
+    * HG03045
+    * HG03060
+    * HG03064
+    * HG03066
+    * HG03095
+    * HG03097
+    * HG03103
+    * HG03108
+    * HG03135
+    * HG03139
+    * HG03159
+    * HG03175
+    * HG03196
+    * HG03280
+    * HG03342
+    * HG03354
+    * HG03378
+    * HG03432
+    * HG03439
+    * HG03442
+    * HG03457
+    * HG03460
+    * HG03469
+    * HG03520
+    * HG03521
+    * HG03558
+    * HG03565
+    * HG03571
+    * HG03575
+    * HL-60
+    * Jurkat, Clone E6-1
+    * K562  [62 samples]
+    * K562, G1 phase
+    * K562, G2 phase
+    * KOPT-K1
+    * Karpas-422
+    * Loucy
+    * MM.1S
+    * NAMALWA  [2 samples]
+    * OCI-LY7
+    * RPMI8226
+    * SU-DHL-6
+
+  Bone (3 cell lines):
+    * KMS-11
+    * MG63
+    * SJSA1
+
+  Bone marrow (10 cell lines):
+    * HAP-1
+    * HS-27A
+    * HS-5
+    * KBM-7
+    * L1-S8
+    * L1-S8R
+    * NB4
+    * NCI-H929
+    * OCI-LY1
+    * OCI-LY3
+
+  Brain (11 cell lines):
+    * A172
+    * BE2C
+    * D341Med
+    * D721Med
+    * Daoy
+    * H4
+    * H54
+    * M059J
+    * SK-N-DZ  [2 samples]
+    * SK-N-MC
+    * SK-N-SH  [2 samples]
+
+  Breast (4 cell lines):
+    * MCF 10A  [3 samples]
+    * MCF-7  [4 samples]
+    * MCF-7, expressing RNAi
+    * T47D  [3 samples]
+
+  Connective tissue (2 cell lines):
+    * CWRU1
+    * HT1080
+
+  Embryo (13 cell lines):
+    * ELF-1
+    * H1
+    * H7
+    * H9
+    * H9, stably expressing C-terminal DsRed-tagged CDT1, stably expressing N-terminal eGFP-tagged GMNN G1 phase
+    * H9, stably expressing C-terminal DsRed-tagged CDT1, stably expressing N-terminal eGFP-tagged GMNN G1b phase
+    * H9, stably expressing C-terminal DsRed-tagged CDT1, stably expressing N-terminal eGFP-tagged GMNN G2 phase
+    * H9, stably expressing C-terminal DsRed-tagged CDT1, stably expressing N-terminal eGFP-tagged GMNN S1 phase
+    * H9, stably expressing C-terminal eGFP-tagged HES5
+    * HUES48
+    * HUES6
+    * HUES64
+    * UCSF-4
+
+  Epithelium (1 cell lines):
+    * Urothelium cell line  [2 samples]
+
+  Eye (1 cell lines):
+    * WERI-Rb-1
+
+  Kidney (8 cell lines):
+    * ACHN
+    * Caki2
+    * G401
+    * HEK293
+    * HEK293T
+    * HK-2
+    * RCC
+    * RCC 7860
+
+  Large intestine (15 cell lines):
+    * Caco-2
+    * HCEC 1CT
+    * HCT116  [9 samples]
+    * HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens BRD4
+    * HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens CDK7
+    * HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens CTCF
+    * HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens MED14
+    * HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens POLR2A
+    * HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens RAD21
+    * HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens SMARCA5
+    * HCT116, genetically modified (insertion) using CRISPR inserting O. sativa LOC4335696, genetically modified (insertion) using CRISPR targeting H. sapiens SUPT16H
+    * HT-29
+    * LoVo
+    * RKO
+    * SW480
+
+  Liver (3 cell lines):
+    * HepG2
+    * HuH-7
+    * HuH-7.5
+
+  Lung (10 cell lines):
+    * A549  [3 samples]
+    * AG04450
+    * AG08396
+    * Calu3
+    * IMR-90  [2 samples]
+    * NCI-H226
+    * NCI-H460
+    * PC-9
+    * WI38  [2 samples]
+    * WI38, stably expressing RAF1
+
+  Lymphoid tissue (1 cell lines):
+    * GM18507
+
+  Mouth (2 cell lines):
+    * ACC112
+    * AG09319
+
+  Muscle (3 cell lines):
+    * A673
+    * LHCN-M2
+    * SJCRH30
+
+  Nose (1 cell lines):
+    * C803
+
+  Pancreas (3 cell lines):
+    * 8988T
+    * HPDE6-E6E7
+    * Panc1
+
+  Penis (5 cell lines):
+    * EH
+    * EL
+    * ELR
+    * HFF-Myc
+    * HFFc6
+
+  Placenta (1 cell lines):
+    * HTR-8/SVneo
+
+  Prostate (8 cell lines):
+    * 22Rv1  [2 samples]
+    * C4-2B
+    * LNCAP  [2 samples]
+    * LNCaP clone FGC  [2 samples]
+    * PC-3
+    * RWPE1
+    * RWPE2  [2 samples]
+    * VCaP
+
+  Skin (28 cell lines):
+    * AG04449
+    * AG08395
+    * AG09309
+    * AG10803
+    * AG20443
+    * BJ
+    * COLO829
+    * GM03348  [2 samples]
+    * GM03348, genetically modified (insertion) using transduction targeting H. sapiens MYOD1
+    * GM04503
+    * GM04504
+    * GM23248
+    * GM23338  [2 samples]
+    * IPS DF 19.11
+    * IPS DF 19.7
+    * IPS DF 4.7
+    * IPS DF 6.9
+    * IPS-11a
+    * IPS-15b
+    * IPS-18a
+    * IPS-18c
+    * IPS-20b
+    * IPS-NIHi11
+    * IPS-NIHi7
+    * RPMI7951
+    * SK-MEL-5
+    * WTC11
+    * WTC11, genetically modified (insertion) using TALEN inserting M. musculus Neurog2
+
+  Testis (1 cell lines):
+    * NT2/D1
+
+  Uterus (3 cell lines):
+    * HeLa-S3  [2 samples]
+    * HeLa-S3, G1b phase
+    * Ishikawa  [3 samples]
+
+  TOTAL unique cell line base names: 274
+
+
+================================================================================
+ALL PRIMARY CELL TYPES (base names, grouped by organ)
+================================================================================
+
+  Blood (55 primary cell types):
+    * Activated B cell
+    * Activated CD4-positive, CD25-positive, alpha-beta regulatory T cell  [4 donors/samples]
+    * Activated CD4-positive, alpha-beta T cell  [23 donors/samples]
+    * Activated CD4-positive, alpha-beta memory T cell  [2 donors/samples]
+    * Activated CD8-positive, alpha-beta T cell  [3 donors/samples]
+    * Activated CD8-positive, alpha-beta memory T cell  [15 donors/samples]
+    * Activated T-cell  [17 donors/samples]
+    * Activated T-helper 1 cell  [4 donors/samples]
+    * Activated T-helper 17 cell  [2 donors/samples]
+    * Activated T-helper 2 cell
+    * Activated T-helper 9 cell
+    * Activated effector memory CD4-positive, alpha-beta T cell  [3 donors/samples]
+    * Activated gamma-delta T cell  [2 donors/samples]
+    * Activated naive CD4-positive, alpha-beta T cell  [12 donors/samples]
+    * Activated naive CD8-positive, alpha-beta T cell  [10 donors/samples]
+    * B cell  [8 donors/samples]
+    * CD14-positive monocyte  [14 donors/samples]
+    * CD1c-positive myeloid dendritic cell
+    * CD4-positive, CD25-positive, alpha-beta regulatory T cell  [16 donors/samples]
+    * CD4-positive, alpha-beta T cell  [29 donors/samples]
+    * CD4-positive, alpha-beta memory T cell  [12 donors/samples]
+    * CD8-positive, alpha-beta T cell  [13 donors/samples]
+    * CD8-positive, alpha-beta memory T cell  [12 donors/samples]
+    * Central memory CD4-positive, alpha-beta T cell  [2 donors/samples]
+    * Central memory CD8-positive, alpha-beta T cell  [2 donors/samples]
+    * Dendritic cell
+    * Effector CD4-positive, alpha-beta T cell  [2 donors/samples]
+    * Effector memory CD4-positive, alpha-beta T cell  [4 donors/samples]
+    * Effector memory CD8-positive, alpha-beta T cell  [2 donors/samples]
+    * IgD-negative memory B cell  [5 donors/samples]
+    * Inflammatory macrophage  [3 donors/samples]
+    * Memory B cell  [2 donors/samples]
+    * Mononuclear cell
+    * Naive B cell  [9 donors/samples]
+    * Naive thymus-derived CD4-positive, alpha-beta T cell  [20 donors/samples]
+    * Naive thymus-derived CD4-positive, alpha-beta T cell, mixed sex
+    * Naive thymus-derived CD8-positive, alpha-beta T cell  [16 donors/samples]
+    * Natural killer cell  [11 donors/samples]
+    * Neutrophil  [3 donors/samples]
+    * Peripheral blood mononuclear cell  [4 donors/samples]
+    * Stimulated activated CD4-positive, alpha-beta T cell  [47 donors/samples]
+    * Stimulated activated CD8-positive, alpha-beta memory T cell  [27 donors/samples]
+    * Stimulated activated effector memory CD8-positive, alpha-beta T cell  [5 donors/samples]
+    * Stimulated activated memory B cell  [2 donors/samples]
+    * Stimulated activated naive B cell  [5 donors/samples]
+    * Stimulated activated naive CD8-positive, alpha-beta T cell  [4 donors/samples]
+    * Suppressor macrophage  [4 donors/samples]
+    * T follicular helper cell
+    * T-cell  [56 donors/samples]
+    * T-helper 1 cell  [9 donors/samples]
+    * T-helper 1 cell, mixed sex
+    * T-helper 17 cell  [8 donors/samples]
+    * T-helper 2 cell  [9 donors/samples]
+    * T-helper 22 cell
+    * T-helper 9 cell
+
+  Blood vessel (10 primary cell types):
+    * Brain microvascular endothelial cell
+    * Dermis blood vessel endothelial cell  [2 donors/samples]
+    * Dermis blood vessel endothelial cell, male newborn  [2 donors/samples]
+    * Dermis microvascular lymphatic vessel endothelial cell  [2 donors/samples]
+    * Endothelial cell of umbilical vein, newborn  [3 donors/samples]
+    * Fibroblast of pulmonary artery
+    * Fibroblast of the aortic adventitia
+    * Kidney capillary endothelial cell
+    * Lung microvascular endothelial cell  [2 donors/samples]
+    * Pulmonary artery endothelial cell
+
+  Bone marrow (3 primary cell types):
+    * Common myeloid progenitor, CD34-positive  [14 donors/samples]
+    * Immature natural killer cell  [7 donors/samples]
+    * Stromal cell of bone marrow
+
+  Brain (7 primary cell types):
+    * Astrocyte
+    * Astrocyte of the cerebellum
+    * Astrocyte of the hippocampus
+    * Brain pericyte
+    * Choroid plexus epithelial cell
+    * Neurosphere  [4 donors/samples]
+    * Smooth muscle cell of the brain vasculature
+
+  Breast (4 primary cell types):
+    * Fibroblast of breast  [2 donors/samples]
+    * Fibroblast of mammary gland
+    * Mammary epithelial cell  [3 donors/samples]
+    * Myoepithelial cell of mammary gland  [2 donors/samples]
+
+  Connective tissue (2 primary cell types):
+    * Mesenchymal stem cell
+    * Osteoblast  [2 donors/samples]
+
+  Embryo (3 primary cell types):
+    * Amniotic stem cell
+    * Dedifferentiated amniotic fluid mesenchymal stem cell
+    * Trophoblast cell  [4 donors/samples]
+
+  Epithelium (1 primary cell types):
+    * Non-pigmented ciliary epithelial cell
+
+  Esophagus (1 primary cell types):
+    * Epithelial cell of esophagus
+
+  Eye (3 primary cell types):
+    * Fibroblast of the conjunctiva
+    * Iris pigment epithelial cell
+    * Retinal pigment epithelial cell
+
+  Heart (1 primary cell types):
+    * Cardiac fibroblast  [3 donors/samples]
+
+  Kidney (7 primary cell types):
+    * Epithelial cell of proximal tubule
+    * Glomerular endothelial cell
+    * Glomerular visceral epithelial cell
+    * Kidney epithelial cell
+    * Kidney glomerular epithelial cell
+    * Kidney tubule cell  [2 donors/samples]
+    * Renal cortical epithelial cell
+
+  Liver (2 primary cell types):
+    * Hepatic stellate cell
+    * Hepatocyte
+
+  Lung (2 primary cell types):
+    * Bronchial epithelial cell  [2 donors/samples]
+    * Fibroblast of lung  [4 donors/samples]
+
+  Mouth (2 primary cell types):
+    * Fibroblast of gingiva
+    * Fibroblast of peridontal ligament
+
+  Muscle (4 primary cell types):
+    * Cardiac muscle cell
+    * Skeletal muscle cell
+    * Skeletal muscle myoblast  [2 donors/samples]
+    * Skeletal muscle satellite cell
+
+  Penis (1 primary cell types):
+    * Foreskin melanocyte, male newborn  [3 donors/samples]
+
+  Placenta (2 primary cell types):
+    * Amniotic epithelial cell
+    * Fibroblast of villous mesenchyme
+
+  Prostate (1 primary cell types):
+    * Epithelial cell of prostate  [2 donors/samples]
+
+  Skin (12 primary cell types):
+    * Epidermal melanocyte
+    * Fibroblast of dermis  [3 donors/samples]
+    * Fibroblast of skin of abdomen
+    * Fibroblast of skin of back
+    * Fibroblast of skin of left quadriceps
+    * Fibroblast of skin of right biceps
+    * Fibroblast of skin of right quadriceps
+    * Fibroblast of skin of scalp
+    * Fibroblast of upper back skin
+    * Foreskin fibroblast, male newborn  [5 donors/samples]
+    * Foreskin keratinocyte, male newborn  [3 donors/samples]
+    * Keratinocyte  [2 donors/samples]
+
+  Spinal cord (1 primary cell types):
+    * Astrocyte of the spinal cord
+
+  TOTAL unique primary cell base types: 124
+
+
+Generating cell-type-focused plots...
+  [13] Base cell types per organ (stacked) saved.
+  [14] Cell lines (base names) per organ saved.
+  [15] Primary cell types per organ saved.
+  [16] All cell types by sample count saved.
+  [17] Blood all cell types saved.
+  [18] Brain all cell types saved.
+  [19] Top 6 organs cell diversity saved.
+  [20] Cell type category heatmap saved.
+  [21] Tissue vs cell types per organ saved.
+
+================================================================================
+FINAL CELL TYPE STATISTICS
+================================================================================
+  Total biosamples (individual entries):       1888
+  Unique base cell type names (across all):    583
+  Unique (organ, base_celltype) combos:        583
+
+  By Sample Type (unique base names):
+    Cell line                                  274
+    Primary cell                               124
+    In vitro differentiated cells               36
+    Organoid                                     2
+    Tissue                                     147
+
+  By Cell Category:
+    B cell                            32 samples,    7 unique base types
+    Cell line                        367 samples,  274 unique base types
+    Dendritic cell                     2 samples,    2 unique base types
+    Endothelial                       15 samples,    9 unique base types
+    Epithelial                        25 samples,   17 unique base types
+    Fibroblast                        31 samples,   19 unique base types
+    In vitro diff.                    62 samples,   36 unique base types
+    Macrophage                         7 samples,    2 unique base types
+    Monocyte                          14 samples,    1 unique base types
+    Muscle cell                        6 samples,    5 unique base types
+    NK cell                           18 samples,    2 unique base types
+    Neural cell                        4 samples,    4 unique base types
+    Neutrophil                         3 samples,    1 unique base types
+    Organoid                           9 samples,    2 unique base types
+    Other primary                     59 samples,   22 unique base types
+    Stem/Progenitor                   17 samples,    4 unique base types
+    T cell                           365 samples,   29 unique base types
+    Tissue                           852 samples,  147 unique base types
+
+  Organs with most cell lines:
+    Blood                                137 cell lines
+    Skin                                  28 cell lines
+    Large intestine                       15 cell lines
+    Embryo                                13 cell lines
+    Brain                                 11 cell lines
+    Lung                                  10 cell lines
+    Bone marrow                           10 cell lines
+    Kidney                                 8 cell lines
+    Prostate                               8 cell lines
+    Penis                                  5 cell lines
+
+  Organs with most primary cell types:
+    Blood                                 55 primary cell types
+    Skin                                  12 primary cell types
+    Blood vessel                          10 primary cell types
+    Kidney                                 7 primary cell types
+    Brain                                  7 primary cell types
+    Breast                                 4 primary cell types
+    Muscle                                 4 primary cell types
+    Embryo                                 3 primary cell types
+    Bone marrow                            3 primary cell types
+    Eye                                    3 primary cell types
+
+All new plots saved to: biosample_plots/
+  01_sample_type_pie.png (88 KB)
+  02_biosamples_per_organ.png (164 KB)
+  03_cell_lines_per_organ.png (90 KB)
+  04_sample_type_per_organ_stacked.png (174 KB)
+  05_life_stage_distribution.png (122 KB)
+  06_assay_coverage.png (91 KB)
+  07_assay_heatmap_per_organ.png (259 KB)
+  08_collection_distribution.png (141 KB)
+  09_rna_seq_availability.png (184 KB)
+  10_top15_organs_diversity.png (131 KB)
+  11_assay_combinations.png (110 KB)
+  12_comprehensive_dashboard.png (289 KB)
+  13_base_celltypes_per_organ.png (220 KB)
+  14_cell_lines_base_per_organ.png (102 KB)
+  15_primary_cells_per_organ.png (94 KB)
+  16_all_celltypes_by_sample_count.png (3606 KB)
+  16_top20_most_sampled.png (176 KB)
+  17_blood_cell_types_all.png (1016 KB)
+  17_blood_cell_types_top30.png (292 KB)
+  18_brain_cell_types_all.png (346 KB)
+  18_brain_cell_types_top20.png (286 KB)
+  19_top6_organs_cell_diversity.png (687 KB)
+  20_celltype_category_heatmap.png (342 KB)
+  21_tissue_vs_celltypes_per_organ.png (195 KB)
+  celltype_analysis_output.txt (56 KB)
