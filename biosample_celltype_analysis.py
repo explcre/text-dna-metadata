@@ -37,28 +37,35 @@ samples = df[
 # We want to extract the base cell type: "CD4-positive, alpha-beta T cell", "K562", "GM12878"
 
 def extract_base_celltype(name):
-    """Strip donor-specific info (sex, age, treatment) from biosample name to get base cell type."""
+    """Strip donor-specific info (sex, age, treatment, disease) from biosample name to get base cell type."""
     if not isinstance(name, str):
         return name
 
     # Remove treatment info: ", treated with ..."
     name_clean = re.split(r',?\s*treated with\b', name)[0]
 
-    # Remove ", with multiple sclerosis" and similar disease annotations
-    name_clean = re.split(r',?\s*with\s+(?:multiple|type\s+)', name_clean)[0]
-
     # Remove donor info patterns: ", male/female adult/child/embryo (XX years/days)"
-    # Also handles: ", embryo (96 days)", ", male embryo (108 days)"
+    # Also handles: "(90 or above years)", "(96 days)", "(108 days)"
+    # And anything after (disease annotations like "with Alzheimer's disease")
     name_clean = re.split(
-        r',?\s*(?:male|female)?\s*(?:adult|child|embryo)\s*\(\d+\s*(?:years?|days?)\)',
+        r',?\s*(?:male|female)?\s*(?:adult|child|embryo)\s*\(\d+(?:\s*or\s+above)?\s*(?:years?|days?|weeks?)\).*$',
         name_clean
     )[0]
 
     # Remove standalone sex/age: ", female", ", male adult"
     name_clean = re.split(r',\s*(?:male|female)(?:\s+adult)?\s*$', name_clean)[0]
 
+    # Remove ", with <disease>" annotations (e.g. ", with multiple sclerosis")
+    name_clean = re.split(r',\s*with\s+', name_clean)[0]
+
     # Remove "nuclear fraction" suffix
     name_clean = re.sub(r',?\s*nuclear fraction\s*$', '', name_clean)
+
+    # Normalize organoid names: "Brain  organoid ( 180 days post differentiation)" -> "Brain organoid"
+    name_clean = re.sub(r'\s*\(\s*\d+\s*days?\s+post\s+differentiation\s*\)', '', name_clean)
+
+    # Normalize multiple spaces
+    name_clean = re.sub(r'\s{2,}', ' ', name_clean)
 
     # Remove trailing whitespace and commas
     name_clean = name_clean.strip().rstrip(',').strip()
@@ -66,6 +73,29 @@ def extract_base_celltype(name):
     return name_clean
 
 samples['base_celltype'] = samples['Biosample'].apply(extract_base_celltype)
+
+# ── Set up dual output: console + text file ──────────────────────────────────
+import sys
+import io
+
+TEXT_OUTPUT_FILE = os.path.join(OUTPUT_DIR, "celltype_analysis_output.txt")
+
+class TeeOutput:
+    """Write to both console and a file simultaneously."""
+    def __init__(self, filepath):
+        self.terminal = sys.stdout
+        self.file = open(filepath, 'w', encoding='utf-8')
+    def write(self, message):
+        self.terminal.write(message)
+        self.file.write(message)
+    def flush(self):
+        self.terminal.flush()
+        self.file.flush()
+    def close(self):
+        self.file.close()
+
+tee = TeeOutput(TEXT_OUTPUT_FILE)
+sys.stdout = tee
 
 # ══════════════════════════════════════════════════════════════════════════════
 # PRINT COMPREHENSIVE CELL TYPE LISTING
@@ -219,92 +249,87 @@ plt.savefig(f"{OUTPUT_DIR}/15_primary_cells_per_organ.png", dpi=150, bbox_inches
 plt.close()
 print("  [15] Primary cell types per organ saved.")
 
-# ── Plot 16: Top 20 Most-Sampled Cell Types (by number of individual samples) ──
+# ── Plot 16: All Most-Sampled Cell Types (by number of individual samples) ──
 base_sample_counts = samples.groupby(['base_celltype', 'Sample Type']).size().reset_index(name='count')
 base_totals = base_sample_counts.groupby('base_celltype')['count'].sum().sort_values(ascending=False)
-top20 = base_totals.head(20)
 
-fig, ax = plt.subplots(figsize=(14, 8))
-top20_data = base_sample_counts[base_sample_counts['base_celltype'].isin(top20.index)]
-pivot = top20_data.pivot_table(index='base_celltype', columns='Sample Type', values='count', fill_value=0)
-pivot = pivot.loc[top20.index]  # maintain sort order
+fig, ax = plt.subplots(figsize=(14, max(10, len(base_totals) * 0.25)))
+pivot = base_sample_counts.pivot_table(index='base_celltype', columns='Sample Type', values='count', fill_value=0)
+pivot = pivot.loc[base_totals.index]  # maintain sort order
 col_order_present = [c for c in col_order if c in pivot.columns]
 pivot[col_order_present].plot(
     kind='barh', stacked=True, ax=ax,
-    color=[colors[c] for c in col_order_present], edgecolor='white'
+    color=[colors[c] for c in col_order_present], edgecolor='white', linewidth=0.3
 )
 ax.set_xlabel("Number of Individual Samples", fontsize=13)
-ax.set_title("Top 20 Most-Sampled Cell Types / Tissues", fontsize=16, fontweight='bold')
+ax.set_title("All Cell Types / Tissues by Sample Count", fontsize=16, fontweight='bold')
 ax.legend(title="Sample Type", bbox_to_anchor=(1.02, 1), loc='upper left')
 ax.invert_yaxis()
-for i, (ct, total) in enumerate(top20.items()):
-    ax.text(total + 0.3, i, str(total), va='center', fontsize=9, fontweight='bold')
+for i, (ct, total) in enumerate(base_totals.items()):
+    ax.text(total + 0.3, i, str(total), va='center', fontsize=6, fontweight='bold')
 plt.tight_layout()
-plt.savefig(f"{OUTPUT_DIR}/16_top20_most_sampled.png", dpi=150, bbox_inches='tight')
+plt.savefig(f"{OUTPUT_DIR}/16_all_celltypes_by_sample_count.png", dpi=150, bbox_inches='tight')
 plt.close()
-print("  [16] Top 20 most-sampled cell types saved.")
+print("  [16] All cell types by sample count saved.")
 
-# ── Plot 17: Blood Cell Types Treemap-style (grouped bar) ─────────────────
-# Blood is the most complex organ - show its cell type diversity
+# ── Plot 17: Blood Cell Types (all) ──────────────────────────────────────────
 blood = samples[samples['Organ/Tissue'] == 'Blood']
 blood_base = blood.groupby(['base_celltype', 'Sample Type']).size().reset_index(name='count')
 blood_totals = blood_base.groupby('base_celltype')['count'].sum().sort_values(ascending=False)
 
-# Show top 30 blood cell types
-top30_blood = blood_totals.head(30)
-fig, ax = plt.subplots(figsize=(14, 10))
-blood_pivot = blood_base[blood_base['base_celltype'].isin(top30_blood.index)].pivot_table(
+fig, ax = plt.subplots(figsize=(14, max(10, len(blood_totals) * 0.3)))
+blood_pivot = blood_base.pivot_table(
     index='base_celltype', columns='Sample Type', values='count', fill_value=0
 )
-blood_pivot = blood_pivot.loc[top30_blood.index]
+blood_pivot = blood_pivot.loc[blood_totals.index]
 col_present = [c for c in col_order if c in blood_pivot.columns]
 blood_pivot[col_present].plot(
     kind='barh', stacked=True, ax=ax,
-    color=[colors[c] for c in col_present], edgecolor='white'
+    color=[colors[c] for c in col_present], edgecolor='white', linewidth=0.3
 )
 ax.set_xlabel("Number of Individual Samples", fontsize=13)
-ax.set_title("Blood: Top 30 Cell Types by Sample Count", fontsize=16, fontweight='bold')
+ax.set_title("Blood: All Cell Types by Sample Count", fontsize=16, fontweight='bold')
 ax.legend(title="Sample Type")
 ax.invert_yaxis()
 plt.tight_layout()
-plt.savefig(f"{OUTPUT_DIR}/17_blood_cell_types_top30.png", dpi=150, bbox_inches='tight')
+plt.savefig(f"{OUTPUT_DIR}/17_blood_cell_types_all.png", dpi=150, bbox_inches='tight')
 plt.close()
-print("  [17] Blood top 30 cell types saved.")
+print("  [17] Blood all cell types saved.")
 
-# ── Plot 18: Brain Cell Types ─────────────────────────────────────────────
+# ── Plot 18: Brain Cell Types (all) ──────────────────────────────────────────
 brain = samples[samples['Organ/Tissue'] == 'Brain']
 brain_base = brain.groupby(['base_celltype', 'Sample Type']).size().reset_index(name='count')
 brain_totals = brain_base.groupby('base_celltype')['count'].sum().sort_values(ascending=False)
-top20_brain = brain_totals.head(20)
-fig, ax = plt.subplots(figsize=(14, 8))
-brain_pivot = brain_base[brain_base['base_celltype'].isin(top20_brain.index)].pivot_table(
+
+fig, ax = plt.subplots(figsize=(14, max(8, len(brain_totals) * 0.3)))
+brain_pivot = brain_base.pivot_table(
     index='base_celltype', columns='Sample Type', values='count', fill_value=0
 )
-brain_pivot = brain_pivot.loc[top20_brain.index]
+brain_pivot = brain_pivot.loc[brain_totals.index]
 col_present = [c for c in col_order if c in brain_pivot.columns]
 brain_pivot[col_present].plot(
     kind='barh', stacked=True, ax=ax,
-    color=[colors[c] for c in col_present], edgecolor='white'
+    color=[colors[c] for c in col_present], edgecolor='white', linewidth=0.3
 )
 ax.set_xlabel("Number of Individual Samples", fontsize=13)
-ax.set_title("Brain: Top 20 Cell Types by Sample Count", fontsize=16, fontweight='bold')
+ax.set_title("Brain: All Cell Types by Sample Count", fontsize=16, fontweight='bold')
 ax.legend(title="Sample Type")
 ax.invert_yaxis()
 plt.tight_layout()
-plt.savefig(f"{OUTPUT_DIR}/18_brain_cell_types_top20.png", dpi=150, bbox_inches='tight')
+plt.savefig(f"{OUTPUT_DIR}/18_brain_cell_types_all.png", dpi=150, bbox_inches='tight')
 plt.close()
-print("  [18] Brain top 20 cell types saved.")
+print("  [18] Brain all cell types saved.")
 
 # ── Plot 19: Samples per Donor (how many donors per base cell type) ───────
 # For top organs, how many donors contributed to each base cell type?
 top6_organs = ['Blood', 'Brain', 'Muscle', 'Kidney', 'Heart', 'Lung']
-fig, axes = plt.subplots(2, 3, figsize=(22, 14))
+fig, axes = plt.subplots(2, 3, figsize=(26, 20))
 fig.suptitle("Donor/Sample Diversity per Base Cell Type (Top 6 Organs)", fontsize=18, fontweight='bold')
 
 for idx, organ in enumerate(top6_organs):
     ax = axes[idx // 3, idx % 3]
     org_data = samples[samples['Organ/Tissue'] == organ]
-    org_counts = org_data.groupby('base_celltype').size().sort_values(ascending=False).head(15)
+    org_counts = org_data.groupby('base_celltype').size().sort_values(ascending=False)
 
     bar_colors = []
     for ct in org_counts.index:
@@ -313,12 +338,13 @@ for idx, organ in enumerate(top6_organs):
 
     bars = ax.barh(range(len(org_counts)), org_counts.values, color=bar_colors)
     ax.set_yticks(range(len(org_counts)))
-    ax.set_yticklabels(org_counts.index, fontsize=8)
+    fontsize = max(4, min(8, 120 // max(len(org_counts), 1)))
+    ax.set_yticklabels(org_counts.index, fontsize=fontsize)
     ax.set_xlabel("# Samples")
-    ax.set_title(f"{organ} (Top 15)", fontsize=13, fontweight='bold')
+    ax.set_title(f"{organ} (All {len(org_counts)} types)", fontsize=13, fontweight='bold')
     ax.invert_yaxis()
     for i, v in enumerate(org_counts.values):
-        ax.text(v + 0.2, i, str(v), va='center', fontsize=8)
+        ax.text(v + 0.2, i, str(v), va='center', fontsize=6)
 
 # Add a legend
 from matplotlib.patches import Patch
@@ -379,12 +405,12 @@ cat_organ = samples.groupby(['Organ/Tissue', 'cell_category'])['base_celltype'].
 # Keep only interesting categories (non-zero in at least a few organs)
 cat_cols = [c for c in cat_organ.columns if cat_organ[c].sum() >= 2]
 cat_organ = cat_organ[cat_cols]
-cat_organ = cat_organ.loc[cat_organ.sum(axis=1).sort_values(ascending=False).head(20).index]
+cat_organ = cat_organ.loc[cat_organ.sum(axis=1).sort_values(ascending=False).index]
 
-fig, ax = plt.subplots(figsize=(16, 10))
+fig, ax = plt.subplots(figsize=(16, max(10, len(cat_organ) * 0.35)))
 sns.heatmap(cat_organ, annot=True, fmt='d', cmap='YlOrRd', ax=ax,
             linewidths=0.5, linecolor='white', cbar_kws={'label': 'Unique Base Cell Types'})
-ax.set_title("Cell Type Categories per Organ (Top 20 Organs)", fontsize=16, fontweight='bold')
+ax.set_title("Cell Type Categories per Organ (All Organs)", fontsize=16, fontweight='bold')
 ax.set_xlabel("Cell Type Category", fontsize=13)
 ax.set_ylabel("")
 plt.xticks(rotation=45, ha='right')
@@ -451,6 +477,12 @@ for organ, count in pc_base_per_organ.sort_values(ascending=False).head(10).item
 
 print(f"\nAll new plots saved to: {OUTPUT_DIR}/")
 for f in sorted(os.listdir(OUTPUT_DIR)):
-    if f.startswith('1') and int(f.split('_')[0]) >= 13:
-        fsize = os.path.getsize(os.path.join(OUTPUT_DIR, f)) / 1024
+    fpath = os.path.join(OUTPUT_DIR, f)
+    if os.path.isfile(fpath):
+        fsize = os.path.getsize(fpath) / 1024
         print(f"  {f} ({fsize:.0f} KB)")
+
+# Restore stdout and close the tee file
+sys.stdout = tee.terminal
+tee.close()
+print(f"\nAll output also saved to: {TEXT_OUTPUT_FILE}")
