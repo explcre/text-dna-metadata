@@ -1,0 +1,598 @@
+================================================================================
+COMPREHENSIVE CELL TYPE MAPPING ANALYSIS
+ENTEx files / ENTEx metadata / Biosamples.csv
+================================================================================
+
+--- entex-files.txt ---
+Total lines: 3193
+File download URLs: 3192
+Unique ENCFF IDs extracted: 3192
+File types in entex-files.txt: {'bigWig': 1216, 'bed.gz': 864, 'bigBed': 864, 'other': 248}
+
+--- entex-metadata.tsv ---
+Rows: 3192, Columns: 59
+Unique File accessions: 3192
+Unique Experiment accessions: 1057
+Unique Biosample term names: 31
+Biosample term names: ["Peyer's patch", 'adrenal gland', 'ascending aorta', 'body of pancreas', 'breast epithelium', 'coronary artery', 'esophagus muscularis mucosa', 'esophagus squamous epithelium', 'gastrocnemius medialis', 'gastroesophageal sphincter', 'heart left ventricle', 'lower leg skin', 'omental fat pad', 'ovary', 'prostate gland', 'right atrium auricular region', 'right lobe of liver', 'sigmoid colon', 'spleen', 'stomach', 'subcutaneous adipose tissue', 'suprapubic skin', 'testis', 'thoracic aorta', 'thyroid gland', 'tibial artery', 'tibial nerve', 'transverse colon', 'upper lobe of left lung', 'uterus', 'vagina']
+Unique Biosample term ids: 31
+Assays: ['ATAC-seq', 'DNase-seq', 'Histone ChIP-seq', 'TF ChIP-seq', 'WGBS', 'eCLIP', 'in situ Hi-C', 'intact Hi-C', 'long read RNA-seq', 'microRNA counts', 'microRNA-seq', 'small RNA-seq', 'total RNA-seq']
+Donors: ['/human-donors/ENCDO271OUW/', '/human-donors/ENCDO451RUA/', '/human-donors/ENCDO793LXB/', '/human-donors/ENCDO845WKR/']
+
+--- Biosamples.csv ---
+Rows: 1931, Columns: 31
+Unique Tissue/Biosample: 1666
+Unique Biosample: 1623
+Unique Organ/Tissue: 43
+Organ/Tissue values: ['Adipose', 'Adrenal gland', 'Blood', 'Blood vessel', 'Bone', 'Bone marrow', 'Brain', 'Breast', 'Connective tissue', 'Embryo', 'Epithelium', 'Esophagus', 'Eye', 'Fallopian tube', 'Gallbladder', 'Heart', 'Kidney', 'Large intestine', 'Limb', 'Liver', 'Lung', 'Lymphoid tissue', 'Mouth', 'Muscle', 'Nerve', 'Nose', 'Ovary', 'Pancreas', 'Parathyroid gland', 'Penis', 'Placenta', 'Prostate', 'Skin', 'Small intestine', 'Spinal cord', 'Spleen', 'Stomach', 'Testis', 'Thymus', 'Thyroid', 'Urinary bladder', 'Uterus', 'Vagina']
+
+================================================================================
+MAPPING 1: entex-files.txt ENCFF IDs ↔ entex-metadata File accessions
+================================================================================
+ENCFF IDs in entex-files.txt: 3192
+File accessions in entex-metadata: 3192
+Overlap (matched): 3192
+Only in entex-files.txt: 0
+Only in entex-metadata: 0
+Match rate (entex-files → metadata): 100.0%
+
+================================================================================
+MAPPING 2: Biosample term name (entex-metadata) ↔ Tissue/Biosample (Biosamples.csv)
+================================================================================
+
+ENTEx unique biosample term names: 31
+Biosamples.csv unique Tissue/Biosample: 1666
+Biosamples.csv unique Biosample: 1623
+Biosamples.csv unique Organ/Tissue: 43
+
+Exact matches (term name ↔ Tissue/Biosample): 0
+Exact matches (term name ↔ Biosample): 0
+Exact matches (term name ↔ Organ/Tissue): 0
+
+--- Fuzzy / Substring Matching (term name → Tissue/Biosample) ---
+ENTEx terms with at least one fuzzy match: 31/31
+  'Peyer's patch' →
+    [entex_substring_of_bio] 'Peyer's patch, female adult (51 years)'
+    [entex_substring_of_bio] 'Peyer's patch, female adult (53 years)'
+    [entex_substring_of_bio] 'Peyer's patch, male adult (37 years)'
+    [entex_substring_of_bio] 'Peyer's patch, male adult (54 years)'
+  'adrenal gland' →
+    [exact_ci] 'Adrenal gland'
+    [entex_substring_of_bio] 'Adrenal gland, embryo (96 days)'
+    [entex_substring_of_bio] 'Adrenal gland, female adult (30 years)'
+    [entex_substring_of_bio] 'Adrenal gland, female adult (41 years)'
+    [entex_substring_of_bio] 'Adrenal gland, female adult (47 years)'
+    ... and 15 more
+  'ascending aorta' →
+    [entex_substring_of_bio] 'Ascending aorta, female adult (51 years)'
+    [entex_substring_of_bio] 'Ascending aorta, female adult (53 years)'
+  'body of pancreas' →
+    [entex_substring_of_bio] 'Body of pancreas, female adult (51 years)'
+    [entex_substring_of_bio] 'Body of pancreas, female adult (53 years)'
+    [entex_substring_of_bio] 'Body of pancreas, male adult (37 years)'
+    [entex_substring_of_bio] 'Body of pancreas, male adult (54 years)'
+    [bio_substring_of_entex] 'Pancreas'
+  'breast epithelium' →
+    [bio_substring_of_entex] 'Breast'
+    [entex_substring_of_bio] 'Breast epithelium, female adult (51 years)'
+    [entex_substring_of_bio] 'Breast epithelium, female adult (53 years)'
+    [entex_substring_of_bio] 'Breast epithelium, male adult (37 years)'
+    [entex_substring_of_bio] 'Breast epithelium, male adult (54 years)'
+    ... and 1 more
+  'coronary artery' →
+    [entex_substring_of_bio] 'Coronary artery, female adult (51 years)'
+    [entex_substring_of_bio] 'Coronary artery, female adult (53 years)'
+    [entex_substring_of_bio] 'Liver, male adult (32 years) with nonobstructive coronary artery disease'
+    [entex_substring_of_bio] 'Liver, male adult (32 years) with nonobstructive coronary artery disease female child (6 years)'
+  'esophagus muscularis mucosa' →
+    [bio_substring_of_entex] 'Esophagus'
+    [entex_substring_of_bio] 'Esophagus muscularis mucosa, female adult (51 years)'
+    [entex_substring_of_bio] 'Esophagus muscularis mucosa, female adult (53 years)'
+    [entex_substring_of_bio] 'Esophagus muscularis mucosa, male adult (37 years)'
+    [entex_substring_of_bio] 'Esophagus muscularis mucosa, male adult (54 years)'
+  'esophagus squamous epithelium' →
+    [bio_substring_of_entex] 'Epithelium'
+    [bio_substring_of_entex] 'Esophagus'
+    [entex_substring_of_bio] 'Esophagus squamous epithelium, female adult (51 years)'
+    [entex_substring_of_bio] 'Esophagus squamous epithelium, female adult (53 years)'
+    [entex_substring_of_bio] 'Esophagus squamous epithelium, male adult (37 years)'
+    ... and 1 more
+  'gastrocnemius medialis' →
+    [entex_substring_of_bio] 'Gastrocnemius medialis, female adult (51 years)'
+    [entex_substring_of_bio] 'Gastrocnemius medialis, female adult (53 years)'
+    [entex_substring_of_bio] 'Gastrocnemius medialis, male adult (37 years)'
+    [entex_substring_of_bio] 'Gastrocnemius medialis, male adult (54 years)'
+  'gastroesophageal sphincter' →
+    [entex_substring_of_bio] 'Gastroesophageal sphincter, female adult (51 years)'
+    [entex_substring_of_bio] 'Gastroesophageal sphincter, female adult (53 years)'
+    [entex_substring_of_bio] 'Gastroesophageal sphincter, male adult (37 years)'
+    [entex_substring_of_bio] 'Gastroesophageal sphincter, male adult (54 years)'
+  'heart left ventricle' →
+    [bio_substring_of_entex] 'Heart'
+    [entex_substring_of_bio] 'Heart left ventricle, female adult (46 years)'
+    [entex_substring_of_bio] 'Heart left ventricle, female adult (47 years)'
+    [entex_substring_of_bio] 'Heart left ventricle, female adult (51 years)'
+    [entex_substring_of_bio] 'Heart left ventricle, female adult (53 years)'
+    ... and 14 more
+  'lower leg skin' →
+    [entex_substring_of_bio] 'Lower leg skin, female adult (51 years)'
+    [entex_substring_of_bio] 'Lower leg skin, female adult (53 years)'
+    [entex_substring_of_bio] 'Lower leg skin, male adult (37 years)'
+    [entex_substring_of_bio] 'Lower leg skin, male adult (54 years)'
+    [bio_substring_of_entex] 'Skin'
+  'omental fat pad' →
+    [entex_substring_of_bio] 'Omental fat pad, female adult (51 years)'
+    [entex_substring_of_bio] 'Omental fat pad, female adult (53 years)'
+    [entex_substring_of_bio] 'Omental fat pad, male adult (37 years)'
+    [entex_substring_of_bio] 'Omental fat pad, male adult (54 years)'
+  'ovary' →
+    [exact_ci] 'Ovary'
+    [entex_substring_of_bio] 'Ovary, female adult (30 years)'
+    [entex_substring_of_bio] 'Ovary, female adult (41 years)'
+    [entex_substring_of_bio] 'Ovary, female adult (46 years)'
+    [entex_substring_of_bio] 'Ovary, female adult (47 years)'
+    ... and 5 more
+  'prostate gland' →
+    [bio_substring_of_entex] 'Prostate'
+    [entex_substring_of_bio] 'Prostate gland, male adult (37 years)'
+    [entex_substring_of_bio] 'Prostate gland, male adult (54 years)'
+  'right atrium auricular region' →
+    [entex_substring_of_bio] 'Right atrium auricular region, female adult (51 years)'
+    [entex_substring_of_bio] 'Right atrium auricular region, female adult (53 years)'
+  'right lobe of liver' →
+    [bio_substring_of_entex] 'Liver'
+    [entex_substring_of_bio] 'Right lobe of liver, female adult (41 years)'
+    [entex_substring_of_bio] 'Right lobe of liver, female adult (47 years)'
+    [entex_substring_of_bio] 'Right lobe of liver, female adult (53 years)'
+    [entex_substring_of_bio] 'Right lobe of liver, female child (16 years)'
+    ... and 2 more
+  'sigmoid colon' →
+    [entex_substring_of_bio] 'Sigmoid colon, female adult (51 years)'
+    [entex_substring_of_bio] 'Sigmoid colon, female adult (53 years)'
+    [entex_substring_of_bio] 'Sigmoid colon, male adult (34 years)'
+    [entex_substring_of_bio] 'Sigmoid colon, male adult (37 years)'
+    [entex_substring_of_bio] 'Sigmoid colon, male adult (54 years)'
+    ... and 1 more
+  'spleen' →
+    [exact_ci] 'Spleen'
+    [entex_substring_of_bio] 'Spleen, embryo (112 days)'
+    [entex_substring_of_bio] 'Spleen, female adult (30 years)'
+    [entex_substring_of_bio] 'Spleen, female adult (30 years) female adult (20 years)'
+    [entex_substring_of_bio] 'Spleen, female adult (41 years)'
+    ... and 9 more
+  'stomach' →
+    [entex_substring_of_bio] 'Mucosa of stomach, male adult (59 years)'
+    [exact_ci] 'Stomach'
+    [entex_substring_of_bio] 'Stomach smooth muscle, female adult (84 years)'
+    [entex_substring_of_bio] 'Stomach smooth muscle, male adult (59 years)'
+    [entex_substring_of_bio] 'Stomach, embryo (101 days)'
+    ... and 19 more
+  'subcutaneous adipose tissue' →
+    [bio_substring_of_entex] 'Adipose'
+    [entex_substring_of_bio] 'Subcutaneous adipose tissue, female adult (53 years)'
+  'suprapubic skin' →
+    [bio_substring_of_entex] 'Skin'
+    [entex_substring_of_bio] 'Suprapubic skin, female adult (51 years)'
+    [entex_substring_of_bio] 'Suprapubic skin, female adult (53 years)'
+    [entex_substring_of_bio] 'Suprapubic skin, male adult (37 years)'
+    [entex_substring_of_bio] 'Suprapubic skin, male adult (54 years)'
+  'testis' →
+    [exact_ci] 'Testis'
+    [entex_substring_of_bio] 'Testis, male adult (37 years)'
+    [entex_substring_of_bio] 'Testis, male adult (54 years)'
+    [entex_substring_of_bio] 'Testis, male embryo'
+  'thoracic aorta' →
+    [entex_substring_of_bio] 'Thoracic aorta, male adult (37 years)'
+    [entex_substring_of_bio] 'Thoracic aorta, male adult (54 years)'
+  'thyroid gland' →
+    [entex_substring_of_bio] 'Parathyroid gland'
+    [bio_substring_of_entex] 'Thyroid'
+    [entex_substring_of_bio] 'Thyroid gland, female adult (51 years)'
+    [entex_substring_of_bio] 'Thyroid gland, female adult (53 years)'
+    [entex_substring_of_bio] 'Thyroid gland, male adult (37 years)'
+    ... and 1 more
+  'tibial artery' →
+    [entex_substring_of_bio] 'Tibial artery, female adult (53 years)'
+    [entex_substring_of_bio] 'Tibial artery, male adult (37 years)'
+    [entex_substring_of_bio] 'Tibial artery, male adult (54 years)'
+  'tibial nerve' →
+    [bio_substring_of_entex] 'Nerve'
+    [entex_substring_of_bio] 'Tibial nerve, female adult (51 years)'
+    [entex_substring_of_bio] 'Tibial nerve, female adult (53 years)'
+    [entex_substring_of_bio] 'Tibial nerve, male adult (37 years)'
+    [entex_substring_of_bio] 'Tibial nerve, male adult (54 years)'
+  'transverse colon' →
+    [entex_substring_of_bio] 'Transverse colon, female adult (51 years)'
+    [entex_substring_of_bio] 'Transverse colon, female adult (53 years)'
+    [entex_substring_of_bio] 'Transverse colon, male adult (37 years)'
+    [entex_substring_of_bio] 'Transverse colon, male adult (54 years)'
+  'upper lobe of left lung' →
+    [bio_substring_of_entex] 'Lung'
+    [entex_substring_of_bio] 'Upper lobe of left lung, female adult (51 years)'
+    [entex_substring_of_bio] 'Upper lobe of left lung, female adult (53 years)'
+    [entex_substring_of_bio] 'Upper lobe of left lung, female adult (61 years)'
+    [entex_substring_of_bio] 'Upper lobe of left lung, male adult (37 years)'
+    ... and 2 more
+  'uterus' →
+    [exact_ci] 'Uterus'
+    [entex_substring_of_bio] 'Uterus, female adult (51 years)'
+    [entex_substring_of_bio] 'Uterus, female adult (53 years)'
+    [entex_substring_of_bio] 'Uterus, female adult (59 years)'
+  'vagina' →
+    [exact_ci] 'Vagina'
+    [entex_substring_of_bio] 'Vagina, female adult (51 years)'
+    [entex_substring_of_bio] 'Vagina, female adult (53 years)'
+
+--- Fuzzy / Substring Matching (term name → Organ/Tissue) ---
+ENTEx terms with Organ/Tissue match: 20/31
+  'adrenal gland' → [('exact_ci', 'Adrenal gland')]
+  'body of pancreas' → [('organ_substring', 'Pancreas')]
+  'breast epithelium' → [('organ_substring', 'Breast'), ('organ_substring', 'Epithelium')]
+  'esophagus muscularis mucosa' → [('organ_substring', 'Esophagus')]
+  'esophagus squamous epithelium' → [('organ_substring', 'Epithelium'), ('organ_substring', 'Esophagus')]
+  'heart left ventricle' → [('organ_substring', 'Heart')]
+  'lower leg skin' → [('organ_substring', 'Skin')]
+  'ovary' → [('exact_ci', 'Ovary')]
+  'prostate gland' → [('organ_substring', 'Prostate')]
+  'right lobe of liver' → [('organ_substring', 'Liver')]
+  'spleen' → [('exact_ci', 'Spleen')]
+  'stomach' → [('exact_ci', 'Stomach')]
+  'subcutaneous adipose tissue' → [('organ_substring', 'Adipose')]
+  'suprapubic skin' → [('organ_substring', 'Skin')]
+  'testis' → [('exact_ci', 'Testis')]
+  'thyroid gland' → [('entex_substring', 'Parathyroid gland'), ('organ_substring', 'Thyroid')]
+  'tibial nerve' → [('organ_substring', 'Nerve')]
+  'upper lobe of left lung' → [('organ_substring', 'Lung')]
+  'uterus' → [('exact_ci', 'Uterus')]
+  'vagina' → [('exact_ci', 'Vagina')]
+
+--- Top Sequence Similarity Matches (term name → Biosample) ---
+  'Peyer's patch' → 'Peyer's patch, male adult (37 years)' (similarity: 0.531)
+  'adrenal gland' → 'Adrenal gland' (similarity: 1.000)
+  'ascending aorta' → 'Ascending aorta, female adult (51 years)' (similarity: 0.545)
+  'body of pancreas' → 'Pancreas' (similarity: 0.667)
+  'breast epithelium' → 'Epithelium' (similarity: 0.741)
+  'coronary artery' → 'Urinary bladder' (similarity: 0.600)
+  'esophagus muscularis mucosa' → 'Esophagus muscularis mucosa, male adult (37 years)' (similarity: 0.701)
+  'esophagus squamous epithelium' → 'Esophagus squamous epithelium, male adult (37 years)' (similarity: 0.716)
+  'gastrocnemius medialis' → 'Gastrocnemius medialis, male adult (37 years)' (similarity: 0.657)
+  'gastroesophageal sphincter' → 'Gastroesophageal sphincter, male adult (37 years)' (similarity: 0.693)
+  'heart left ventricle' → 'Heart left ventricle, male child (3 years)' (similarity: 0.645)
+  'lower leg skin' → 'Lower leg skin, male adult (37 years)' (similarity: 0.549)
+  'omental fat pad' → 'Omental fat pad, male adult (37 years)' (similarity: 0.566)
+  'ovary' → 'Ovary' (similarity: 1.000)
+  'prostate gland' → 'Prostate' (similarity: 0.727)
+  'right atrium auricular region' → 'Right atrium auricular region, female adult (51 years)' (similarity: 0.699)
+  'right lobe of liver' → 'Right lobe of liver, male adult (40 years)' (similarity: 0.623)
+  'sigmoid colon' → 'Sigmoid colon, male child (3 years)' (similarity: 0.542)
+  'spleen' → 'Spleen' (similarity: 1.000)
+  'stomach' → 'Stomach' (similarity: 1.000)
+  'subcutaneous adipose tissue' → 'Subcutaneous adipose tissue, female adult (53 years)' (similarity: 0.684)
+  'suprapubic skin' → 'Suprapubic skin, male adult (37 years)' (similarity: 0.566)
+  'testis' → 'Testis' (similarity: 1.000)
+  'thoracic aorta' → 'Thoracic aorta, male adult (37 years)' (similarity: 0.549)
+  'thyroid gland' → 'Parathyroid gland' (similarity: 0.867)
+  'tibial artery' → 'Tibial artery, male adult (37 years)' (similarity: 0.531)
+  'tibial nerve' → 'Nerve' (similarity: 0.588)
+  'transverse colon' → 'Transverse colon, male adult (37 years)' (similarity: 0.582)
+  'upper lobe of left lung' → 'Upper lobe of left lung, male adult (37 years)' (similarity: 0.667)
+  'uterus' → 'Uterus' (similarity: 1.000)
+  'vagina' → 'Vagina' (similarity: 1.000)
+
+================================================================================
+MAPPING 3: Experiment accession IDs (ENCSR*)
+================================================================================
+Experiment IDs in entex-metadata: 1057
+Experiment IDs in Biosamples.csv: 3199
+Overlapping Experiment IDs: 367
+Match rate (entex → bio): 34.7%
+Match rate (bio → entex): 11.5%
+
+Sample overlapping Experiment IDs (first 20): ['ENCSR003SZZ', 'ENCSR005LPI', 'ENCSR006IMH', 'ENCSR006TUH', 'ENCSR012KZW', 'ENCSR014GSQ', 'ENCSR015GFK', 'ENCSR017RQC', 'ENCSR027FSZ', 'ENCSR028YEV', 'ENCSR034ZKE', 'ENCSR037GFN', 'ENCSR037GKL', 'ENCSR038FOS', 'ENCSR053ZKP', 'ENCSR058VBM', 'ENCSR060HPL', 'ENCSR062SVK', 'ENCSR063HOI', 'ENCSR066GBX']
+
+--- Cell type connections via shared Experiment IDs ---
+  ENCSR003SZZ: ENTEx='esophagus squamous epithelium' (TF ChIP-seq)
+    → Biosamples: 'Esophagus squamous epithelium, female adult (51 years)' (Organ: 'Esophagus') via CTCF Exp. ID
+  ENCSR005LPI: ENTEx='omental fat pad' (TF ChIP-seq)
+    → Biosamples: 'Omental fat pad, male adult (54 years)' (Organ: 'Adipose') via CTCF Exp. ID
+  ENCSR006IMH: ENTEx='stomach' (DNase-seq)
+    → Biosamples: 'Stomach, female adult (53 years)' (Organ: 'Stomach') via DNase Exp. ID
+  ENCSR006TUH: ENTEx='adrenal gland' (Histone ChIP-seq)
+    → Biosamples: 'Adrenal gland, female adult (51 years)' (Organ: 'Adrenal gland') via H3K4me3 Exp. ID
+  ENCSR012KZW: ENTEx='esophagus squamous epithelium' (Histone ChIP-seq)
+    → Biosamples: 'Esophagus squamous epithelium, male adult (54 years)' (Organ: 'Esophagus') via H3K4me3 Exp. ID
+  ENCSR014GSQ: ENTEx='adrenal gland' (TF ChIP-seq)
+    → Biosamples: 'Adrenal gland, female adult (51 years)' (Organ: 'Adrenal gland') via CTCF Exp. ID
+  ENCSR015GFK: ENTEx='thoracic aorta' (Histone ChIP-seq)
+    → Biosamples: 'Thoracic aorta, male adult (37 years)' (Organ: 'Blood vessel') via H3K27ac Exp. ID
+  ENCSR017RQC: ENTEx='Peyer's patch' (ATAC-seq)
+    → Biosamples: 'Peyer's patch, female adult (53 years)' (Organ: 'Small intestine') via ATAC Exp. ID
+  ENCSR027FSZ: ENTEx='upper lobe of left lung' (TF ChIP-seq)
+    → Biosamples: 'Upper lobe of left lung, male adult (37 years)' (Organ: 'Lung') via CTCF Exp. ID
+  ENCSR028YEV: ENTEx='spleen' (TF ChIP-seq)
+    → Biosamples: 'Spleen, male adult (54 years)' (Organ: 'Spleen') via CTCF Exp. ID
+  ENCSR034ZKE: ENTEx='breast epithelium' (Histone ChIP-seq)
+    → Biosamples: 'Breast epithelium, female adult (53 years)' (Organ: 'Breast') via H3K27ac Exp. ID
+  ENCSR037GFN: ENTEx='gastroesophageal sphincter' (Histone ChIP-seq)
+    → Biosamples: 'Gastroesophageal sphincter, male adult (37 years)' (Organ: 'Muscle') via H3K4me3 Exp. ID
+  ENCSR037GKL: ENTEx='stomach' (TF ChIP-seq)
+    → Biosamples: 'Stomach, male adult (54 years)' (Organ: 'Stomach') via CTCF Exp. ID
+  ENCSR038FOS: ENTEx='suprapubic skin' (TF ChIP-seq)
+    → Biosamples: 'Suprapubic skin, male adult (54 years)' (Organ: 'Skin') via CTCF Exp. ID
+  ENCSR053ZKP: ENTEx='adrenal gland' (DNase-seq)
+    → Biosamples: 'Adrenal gland, female adult (53 years)' (Organ: 'Adrenal gland') via DNase Exp. ID
+  ENCSR058VBM: ENTEx='upper lobe of left lung' (DNase-seq)
+    → Biosamples: 'Upper lobe of left lung, male adult (37 years)' (Organ: 'Lung') via DNase Exp. ID
+  ENCSR060HPL: ENTEx='coronary artery' (DNase-seq)
+    → Biosamples: 'Coronary artery, female adult (53 years)' (Organ: 'Blood vessel') via DNase Exp. ID
+  ENCSR062SVK: ENTEx='right atrium auricular region' (ATAC-seq)
+    → Biosamples: 'Right atrium auricular region, female adult (51 years)' (Organ: 'Heart') via ATAC Exp. ID
+  ENCSR063HOI: ENTEx='stomach' (Histone ChIP-seq)
+    → Biosamples: 'Stomach, male adult (54 years)' (Organ: 'Stomach') via H3K4me3 Exp. ID
+  ENCSR066GBX: ENTEx='right atrium auricular region' (TF ChIP-seq)
+    → Biosamples: 'Right atrium auricular region, female adult (53 years)' (Organ: 'Heart') via CTCF Exp. ID
+  ENCSR069EGE: ENTEx='transverse colon' (Histone ChIP-seq)
+    → Biosamples: 'Transverse colon, male adult (54 years)' (Organ: 'Large intestine') via H3K27ac Exp. ID
+  ENCSR069UMW: ENTEx='ascending aorta' (Histone ChIP-seq)
+    → Biosamples: 'Ascending aorta, female adult (53 years)' (Organ: 'Blood vessel') via H3K27ac Exp. ID
+  ENCSR070CMW: ENTEx='heart left ventricle' (DNase-seq)
+    → Biosamples: 'Heart left ventricle, female adult (53 years)' (Organ: 'Heart') via DNase Exp. ID
+  ENCSR073TPC: ENTEx='esophagus muscularis mucosa' (TF ChIP-seq)
+    → Biosamples: 'Esophagus muscularis mucosa, male adult (54 years)' (Organ: 'Muscle') via CTCF Exp. ID
+  ENCSR074SFL: ENTEx='esophagus muscularis mucosa' (TF ChIP-seq)
+    → Biosamples: 'Esophagus muscularis mucosa, female adult (53 years)' (Organ: 'Muscle') via CTCF Exp. ID
+  ENCSR074WIB: ENTEx='upper lobe of left lung' (Histone ChIP-seq)
+    → Biosamples: 'Upper lobe of left lung, male adult (37 years)' (Organ: 'Lung') via H3K4me3 Exp. ID
+  ENCSR077HGR: ENTEx='esophagus muscularis mucosa' (Histone ChIP-seq)
+    → Biosamples: 'Esophagus muscularis mucosa, male adult (54 years)' (Organ: 'Muscle') via H3K4me3 Exp. ID
+  ENCSR078EBD: ENTEx='spleen' (ATAC-seq)
+    → Biosamples: 'Spleen, female adult (51 years)' (Organ: 'Spleen') via ATAC Exp. ID
+  ENCSR079YAP: ENTEx='tibial artery' (TF ChIP-seq)
+    → Biosamples: 'Tibial artery, male adult (37 years)' (Organ: 'Blood vessel') via CTCF Exp. ID
+  ENCSR080ISA: ENTEx='tibial artery' (DNase-seq)
+    → Biosamples: 'Tibial artery, female adult (53 years)' (Organ: 'Blood vessel') via DNase Exp. ID
+  (Showed 30 connections)
+
+================================================================================
+MAPPING 4: File accession IDs (ENCFF*) across all three sources
+================================================================================
+ENCFF IDs in entex-files.txt: 3192
+ENCFF IDs in entex-metadata (File accession): 3192
+ENCFF IDs in Biosamples.csv (assay file columns): 3197
+ENCFF IDs in Biosamples.csv (cCRE URLs): 1678
+
+Overlap entex-files ↔ Biosamples.csv: 69
+Overlap entex-metadata ↔ Biosamples.csv: 69
+Triple overlap (all three): 69
+
+Sample ENCFF IDs shared between entex-metadata and Biosamples.csv (first 15):
+  ENCFF013UBZ: ENTEx term='tibial artery', Assay='DNase-seq'
+    → Biosamples: 'Tibial artery, male adult (37 years)' (Organ: 'Blood vessel') via DNase File ID
+  ENCFF017LRG: ENTEx term='thyroid gland', Assay='DNase-seq'
+    → Biosamples: 'Thyroid gland, male adult (54 years)' (Organ: 'Thyroid') via DNase File ID
+  ENCFF017QTW: ENTEx term='stomach', Assay='DNase-seq'
+    → Biosamples: 'Stomach, male adult (37 years)' (Organ: 'Stomach') via DNase File ID
+  ENCFF020EPF: ENTEx term='right lobe of liver', Assay='DNase-seq'
+    → Biosamples: 'Right lobe of liver, female adult (53 years)' (Organ: 'Liver') via DNase File ID
+  ENCFF022SDS: ENTEx term='ascending aorta', Assay='DNase-seq'
+    → Biosamples: 'Ascending aorta, female adult (53 years)' (Organ: 'Blood vessel') via DNase File ID
+  ENCFF028FLY: ENTEx term='sigmoid colon', Assay='DNase-seq'
+    → Biosamples: 'Sigmoid colon, male adult (54 years)' (Organ: 'Large intestine') via DNase File ID
+  ENCFF047YGB: ENTEx term='thyroid gland', Assay='DNase-seq'
+    → Biosamples: 'Thyroid gland, female adult (53 years)' (Organ: 'Thyroid') via DNase File ID
+  ENCFF066BOK: ENTEx term='gastrocnemius medialis', Assay='DNase-seq'
+    → Biosamples: 'Gastrocnemius medialis, male adult (37 years)' (Organ: 'Muscle') via DNase File ID
+  ENCFF087WEP: ENTEx term='body of pancreas', Assay='DNase-seq'
+    → Biosamples: 'Body of pancreas, male adult (37 years)' (Organ: 'Pancreas') via DNase File ID
+  ENCFF103WUK: ENTEx term='gastrocnemius medialis', Assay='DNase-seq'
+    → Biosamples: 'Gastrocnemius medialis, female adult (51 years)' (Organ: 'Muscle') via DNase File ID
+  ENCFF111NRY: ENTEx term='breast epithelium', Assay='DNase-seq'
+    → Biosamples: 'Breast epithelium, male adult (54 years)' (Organ: 'Breast') via DNase File ID
+  ENCFF138FMV: ENTEx term='transverse colon', Assay='DNase-seq'
+    → Biosamples: 'Transverse colon, female adult (51 years)' (Organ: 'Large intestine') via DNase File ID
+  ENCFF156LUX: ENTEx term='thoracic aorta', Assay='DNase-seq'
+    → Biosamples: 'Thoracic aorta, male adult (37 years)' (Organ: 'Blood vessel') via DNase File ID
+  ENCFF162OQB: ENTEx term='spleen', Assay='DNase-seq'
+    → Biosamples: 'Spleen, female adult (53 years)' (Organ: 'Spleen') via DNase File ID
+  ENCFF164EEU: ENTEx term='stomach', Assay='DNase-seq'
+    → Biosamples: 'Stomach, male adult (54 years)' (Organ: 'Stomach') via DNase File ID
+
+================================================================================
+MAPPING 5: Biosample term id (ontology IDs like UBERON:*, CL:*)
+================================================================================
+Unique (term_id, term_name) pairs: 31
+  UBERON:0001211 → Peyer's patch
+  UBERON:0002369 → adrenal gland
+  UBERON:0001496 → ascending aorta
+  UBERON:0001150 → body of pancreas
+  UBERON:0008367 → breast epithelium
+  UBERON:0001621 → coronary artery
+  UBERON:0004648 → esophagus muscularis mucosa
+  UBERON:0006920 → esophagus squamous epithelium
+  UBERON:0011907 → gastrocnemius medialis
+  UBERON:0004550 → gastroesophageal sphincter
+  UBERON:0002084 → heart left ventricle
+  UBERON:0004264 → lower leg skin
+  UBERON:0010414 → omental fat pad
+  UBERON:0000992 → ovary
+  UBERON:0002367 → prostate gland
+  UBERON:0006631 → right atrium auricular region
+  UBERON:0001114 → right lobe of liver
+  UBERON:0001159 → sigmoid colon
+  UBERON:0002106 → spleen
+  UBERON:0000945 → stomach
+  UBERON:0002190 → subcutaneous adipose tissue
+  UBERON:0036149 → suprapubic skin
+  UBERON:0000473 → testis
+  UBERON:0001515 → thoracic aorta
+  UBERON:0002046 → thyroid gland
+  UBERON:0007610 → tibial artery
+  UBERON:0001323 → tibial nerve
+  UBERON:0001157 → transverse colon
+  UBERON:0008952 → upper lobe of left lung
+  UBERON:0000995 → uterus
+  UBERON:0000996 → vagina
+
+================================================================================
+MAPPING 6: Assay type comparison
+================================================================================
+ENTEx assays: ['ATAC-seq', 'DNase-seq', 'Histone ChIP-seq', 'TF ChIP-seq', 'WGBS', 'eCLIP', 'in situ Hi-C', 'intact Hi-C', 'long read RNA-seq', 'microRNA counts', 'microRNA-seq', 'small RNA-seq', 'total RNA-seq']
+Biosamples.csv assay types (from columns): ['DNase', 'ATAC', 'H3K4me3', 'H3K27ac', 'CTCF']
+
+--- ENTEx: Assay × Biosample term name matrix ---
+Assay                          ATAC-seq  DNase-seq  Histone ChIP-seq  TF ChIP-seq  WGBS  eCLIP  in situ Hi-C  intact Hi-C  long read RNA-seq  microRNA counts  microRNA-seq  small RNA-seq  total RNA-seq
+Biosample term name                                                                                                                                                                                      
+Peyer's patch                         3         12                69           24     0      0             0            0                  0                0             0              6             12
+adrenal gland                         9         15                51           21     8      8             0            3                  2                4             9              6             12
+ascending aorta                       0          6                36            9     0      0             0            3                  0                0             0              0              3
+body of pancreas                     12         12                54           33     8      0             0            3                  0                4             6              6              6
+breast epithelium                     9          6                39           24     0      0             0            3                  0                0             0              0              9
+coronary artery                       3          6                 9            6     0      0             0            0                  0                0             0              0              0
+esophagus muscularis mucosa           3          3                72           30     4      0             0            3                  0                0             0              9             12
+esophagus squamous epithelium         3          3                63           30     8      0             0            3                  0                0             0             12             12
+gastrocnemius medialis               12         18                72           21     0      0            16            3                  0                4             6              0             12
+gastroesophageal sphincter            6          0                48           42     8      0             0            0                  0                0             0             12             12
+heart left ventricle                  6          3                36           15     8      0             0            0                  1                4             9              0              6
+lower leg skin                        0          6                 3           30     8      0             0            3                  0                4             6              0             12
+omental fat pad                       3          6                 0            9     0      0             0            0                  0                0             0              3             12
+ovary                                 3          6                12           12     8      0             0            3                  0                2             3              3              6
+prostate gland                        3          3                30           24     4      0             0            3                  0                4             6              6              6
+right atrium auricular region         3          6                36            9     0      0             0            0                  0                4             6              0              6
+right lobe of liver                   3          3                15            6     4      0             0            0                  0                2             3              6              6
+sigmoid colon                        12          9                69           48     0      0             0            3                  0                0             0             12             12
+spleen                                3          6                69           45     8      0             0            0                  0                0             0             12             12
+stomach                               6         12                69           45     8      0             0            3                  0                0             0             12             12
+subcutaneous adipose tissue           3          0                 0            3     0      0             0            0                  0                0             0              3             12
+suprapubic skin                       0          6                18           30     4      0             0            0                  0                0             0              0             12
+testis                                3          6                27           12     8      0             0            3                  0                4             6              6              6
+thoracic aorta                        3          3                33            6     0      0             0            0                  0                0             0              0              6
+thyroid gland                         9         12                69           27     8      0             0            3                  0                4             6              3             12
+tibial artery                         3          9                54            6     0      0             0            3                  0                0             0              0              0
+tibial nerve                          3          9                72           30     8      0             0            0                  0                0             0              3             12
+transverse colon                     12         12                63           48     8      0            16            3                  0                0             0             12             12
+upper lobe of left lung               0         15                72           51     8      0             0            0                  0                0             0             12             12
+uterus                                0          3                36           18     0      0             0            3                  0                4             6              3              6
+vagina                                0          6                27           21     0      0             0            3                  0                4             6              3              3
+
+================================================================================
+MAPPING 7: Donor analysis in ENTEx metadata
+================================================================================
+Unique donors: 4
+  /human-donors/ENCDO271OUW/: 27 tissues → ["Peyer's patch", 'adrenal gland', 'ascending aorta', 'body of pancreas', 'breast epithelium', 'coronary artery', 'esophagus muscularis mucosa', 'esophagus squamous epithelium', 'gastrocnemius medialis', 'gastroesophageal sphincter', 'heart left ventricle', 'lower leg skin', 'omental fat pad', 'ovary', 'right atrium auricular region', 'sigmoid colon', 'spleen', 'stomach', 'subcutaneous adipose tissue', 'suprapubic skin', 'thyroid gland', 'tibial artery', 'tibial nerve', 'transverse colon', 'upper lobe of left lung', 'uterus', 'vagina']
+  /human-donors/ENCDO451RUA/: 23 tissues → ["Peyer's patch", 'adrenal gland', 'body of pancreas', 'breast epithelium', 'esophagus muscularis mucosa', 'esophagus squamous epithelium', 'gastrocnemius medialis', 'gastroesophageal sphincter', 'lower leg skin', 'omental fat pad', 'prostate gland', 'sigmoid colon', 'spleen', 'stomach', 'subcutaneous adipose tissue', 'suprapubic skin', 'testis', 'thoracic aorta', 'thyroid gland', 'tibial artery', 'tibial nerve', 'transverse colon', 'upper lobe of left lung']
+  /human-donors/ENCDO793LXB/: 28 tissues → ["Peyer's patch", 'adrenal gland', 'ascending aorta', 'body of pancreas', 'breast epithelium', 'coronary artery', 'esophagus muscularis mucosa', 'esophagus squamous epithelium', 'gastrocnemius medialis', 'gastroesophageal sphincter', 'heart left ventricle', 'lower leg skin', 'omental fat pad', 'ovary', 'right atrium auricular region', 'right lobe of liver', 'sigmoid colon', 'spleen', 'stomach', 'subcutaneous adipose tissue', 'suprapubic skin', 'thyroid gland', 'tibial artery', 'tibial nerve', 'transverse colon', 'upper lobe of left lung', 'uterus', 'vagina']
+  /human-donors/ENCDO845WKR/: 23 tissues → ["Peyer's patch", 'adrenal gland', 'body of pancreas', 'breast epithelium', 'esophagus muscularis mucosa', 'esophagus squamous epithelium', 'gastrocnemius medialis', 'gastroesophageal sphincter', 'lower leg skin', 'omental fat pad', 'prostate gland', 'sigmoid colon', 'spleen', 'stomach', 'subcutaneous adipose tissue', 'suprapubic skin', 'testis', 'thoracic aorta', 'thyroid gland', 'tibial artery', 'tibial nerve', 'transverse colon', 'upper lobe of left lung']
+
+================================================================================
+COMPREHENSIVE MAPPING SUMMARY
+================================================================================
+
+Linkage Keys Between Tables:
+┌─────────────────────────┬───────────────────────────┬──────────────────────────┐
+│ entex-files.txt         │ entex-metadata.tsv        │ Biosamples.csv           │
+├─────────────────────────┼───────────────────────────┼──────────────────────────┤
+│ ENCFF* in URL           │ File accession (ENCFF*)   │ DNase/ATAC/... File ID   │
+│                         │                           │ cCRE URLs contain ENCFF  │
+│                         │ Experiment accession      │ DNase/ATAC/... Exp. ID   │
+│                         │ (ENCSR*)                  │ (ENCSR*)                 │
+│                         │ Biosample term name       │ Tissue/Biosample         │
+│                         │ (e.g. 'ovary')            │ (e.g. 'Ovary, ...')      │
+│                         │ Biosample term name       │ Organ/Tissue             │
+│                         │ (normalized tissue name)  │ (organ category)         │
+│                         │ Assay                     │ Column-based assay types │
+│                         │ (WGBS, RRBS, ...)         │ (DNase, ATAC, H3K4me3,  │
+│                         │                           │  H3K27ac, CTCF)          │
+│                         │ File download URL         │ Signal URLs              │
+│                         │ (matches entex-files URLs)│ (encodeproject.org URLs) │
+└─────────────────────────┴───────────────────────────┴──────────────────────────┘
+
+Match Statistics:
+  entex-files ↔ entex-metadata (ENCFF):    3192 matches (100.0%)
+  entex-metadata ↔ Biosamples (ENCSR):      367 matches
+  entex-metadata ↔ Biosamples (ENCFF):       69 matches
+  entex-files ↔ Biosamples (ENCFF):          69 matches
+  Triple overlap (all three, ENCFF):         69 matches
+  Cell type name exact matches:               0 (term name ↔ Tissue/Biosample)
+  Cell type → Organ/Tissue matches:          20 fuzzy matches
+
+================================================================================
+UNMATCHED CELL TYPES ANALYSIS
+================================================================================
+
+ENTEx biosample terms with NO match in Biosamples.csv: 0
+
+Biosamples.csv Organ/Tissue values with no exact match in ENTEx: 36
+  - Adipose
+  - Blood
+  - Blood vessel
+  - Bone
+  - Bone marrow
+  - Brain
+  - Breast
+  - Connective tissue
+  - Embryo
+  - Epithelium
+  - Esophagus
+  - Eye
+  - Fallopian tube
+  - Gallbladder
+  - Heart
+  - Kidney
+  - Large intestine
+  - Limb
+  - Liver
+  - Lung
+  - Lymphoid tissue
+  - Mouth
+  - Muscle
+  - Nerve
+  - Nose
+  - Pancreas
+  - Parathyroid gland
+  - Penis
+  - Placenta
+  - Prostate
+  ... and 6 more
+
+================================================================================
+GENERATING PLOTS
+================================================================================
+  [Plot saved: 01_entex_files_type_distribution.png]
+  [Plot saved: 02_encff_id_overlap.png]
+  [Plot saved: 03_experiment_id_overlap.png]
+  [Plot saved: 04_entex_assay_distribution.png]
+  [Plot saved: 05_entex_biosample_term_distribution.png]
+  [Plot saved: 06_assay_tissue_heatmap.png]
+  [Plot saved: 07_celltype_similarity_heatmap.png]
+  [Plot saved: 08_donor_tissue_heatmap.png]
+  [Plot saved: 09_biosamples_organ_distribution.png]
+  [Plot saved: 10_mapping_coverage_summary.png]
+  [Plot saved: 11_per_assay_experiment_overlap.png]
+
+================================================================================
+FINAL SUMMARY & RECOMMENDATIONS
+================================================================================
+
+Key Findings:
+1. entex-files.txt contains 3192 unique file IDs; 3192 (100.0%)
+   map to entex-metadata.tsv via File accession.
+
+2. entex-metadata.tsv ↔ Biosamples.csv can be linked via:
+   a) Experiment IDs (ENCSR*): 367 shared IDs
+   b) File IDs (ENCFF*): 69 shared IDs
+   c) Cell type names: 0 exact + 31 fuzzy matches
+
+3. The strongest mapping key is Experiment accession / Exp. ID (ENCSR* identifiers),
+   providing the most reliable cross-reference between tables.
+
+4. Cell type name matching requires normalization because:
+   - ENTEx uses short names (e.g., 'ovary', 'thyroid gland')
+   - Biosamples.csv uses descriptive names (e.g., 'Ovary, female adult (53 years)')
+   - Biosamples.csv Organ/Tissue provides broader category matches
+
+5. The Biosample term id (UBERON:*/CL:* ontology) in entex-metadata provides
+   standardized identifiers but is NOT present in Biosamples.csv.
+
+6. All three tables share ENCODE file/experiment accession IDs as the primary
+   linkage mechanism. URL patterns in both entex-files.txt and Biosamples.csv
+   contain these IDs embedded in download links.
